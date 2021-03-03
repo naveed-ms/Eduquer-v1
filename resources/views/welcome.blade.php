@@ -894,7 +894,7 @@
             <div class="col-lg-6 col-md-5 h-50 pr-0  font-bold capitalize text-4xl leading-none weunderstand  "
                 data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-quad"
                 style="color:#1d3270;  ; ">
-                <div>we understand 4441</div>
+                <div>we understand 444199</div>
                 <div>all your nnn <span style="color:#35ccee;">international </span></div>
                 <span style="color:#35ccee;">education</span> needs
                 <div class="text-lg pt-4 pb-4">
