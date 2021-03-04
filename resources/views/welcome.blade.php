@@ -881,10 +881,10 @@
 <body>
 
     <!-- 1. Main header section -->
-    @include('layouts.partials.header')
     <!-- Main header section over -->
-
+    @include('layouts.partials.header')
     <div class="container-fluid theme-bg-2 px-0 overflow-hidden" style="background-color: #effaff;">
+
 
         <!-- 1. We all understand section -->
         {{-- @include('layouts.partials.we_all_understand') --}}
