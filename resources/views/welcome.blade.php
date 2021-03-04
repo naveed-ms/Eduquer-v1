@@ -24,6 +24,9 @@
     {{-- <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> --}}
     @yield('landingpage_styles')
     <style>
+        html{
+
+        }
         button {
             /* float: right; */
             padding: 4px, 18px;
@@ -109,9 +112,8 @@
         }
 
         /* ================================media queries set========================================================================== */
-        @media only screen and (min-width:3024px){
+        /* @media only screen and (min-width:3024px){
             .what-we {
-                /* margin-left: 180px; */
             }
 
             .img2 {
@@ -121,7 +123,6 @@
             .img1 {
                 display: block;
                 background: white;
-                /* justify-content:center; */
                 padding-left: 50px;
                 padding-right: 40px;
                 padding-bottom: 20px
@@ -142,13 +143,10 @@
                 padding-left: 5% !important;
                 margin-let: 10% !important;
                 padding-top: 15px;
-                /* max-height: 100%; */
-                /* max-width: 100%; */
-                /* width: 100vw !important; */
+
             }
 
         }
-
         }
         @media only screen and (min-width:1201px) and (max-width:1280px) {
 
@@ -164,7 +162,6 @@
             .img1 {
                 display: block;
                 background: white;
-                /* justify-content:center; */
                 padding-left: 50px;
                 padding-right: 40px;
                 padding-bottom: 20px
@@ -185,13 +182,10 @@
                 padding-left: 5% !important;
                 margin-left: 10% !important;
                 padding-top: 15px;
-                /* max-height: 100%; */
-                /* max-width: 100%; */
-                /* width: 100vw !important; */
+
             }
 
         }
-
         @media only screen and (min-width:1401px) and (max-width:1600px) {
             .footer-center-2 {
                 padding-left: 80px !important;
@@ -209,16 +203,13 @@
             .img1 {
                 display: block;
                 background: white;
-                /* justify-content:center; */
-                /* padding-left: 50px; */
+
                 padding-right: 5%;
-                /* padding-right:40px; */
                 padding-bottom: 20px;
                 padding-left: 5%;
             }
 
             .started-button {
-                /* padding-left:620px; */
                 padding-left: 43%;
                 padding-right: 30%;
             }
@@ -232,19 +223,16 @@
 
             .weunderstand1 {
                 padding-left: 20% !important;
-                /* margin-left: 180px !important; */
                 margin-left: 10%;
                 padding-top: 50px;
                 max-height: 100%;
                 max-width: 100%;
-                /* width: 100vw !important; */
             }
 
             .what-we {
                 margin-left: 150px;
             }
         }
-
         @media only screen and (min-width:1281px) and (max-width:1440px) {
             .footer-center-2 {
                 padding-left: 100px !important;
@@ -257,7 +245,6 @@
             .img1 {
                 display: block;
                 background: white;
-                /* justify-content:center; */
                 padding-left: 50px;
                 padding-right: 40px;
                 padding-bottom: 20px
@@ -280,40 +267,32 @@
                 padding-top: 15px;
                 max-height: 100%;
                 max-width: 100%;
-                /* width: 100vw !important; */
             }
 
         }
-
-
-
         @media only screen and (min-width:993px) and (max-width:1920px) {
             .footer-center-2 {
-                /* padding-left: 80px !important; */
+
             }
             .what-we1{
                 margin-left: 3vw;
             }
             .what-we {
-                /* margin-left: 180px !important; */
+
                 margin-left:10vw;
 
             }
 
             .weunderstand {
                 padding-left: 4vw !important;
-                /* margin-left: 10px !important; */
+
                 padding-top: 60px;
 
             }
-/*  */
+
             .weunderstand1 {
                 padding-left: 11vw !important;
-                /* margin-left: 13vw !important; */
-                /* padding-top: 15px; */
-                /* max-height: 100%; */
-                /* max-width: 100%; */
-                /* width: 100vw !important; */
+
             }
 
             .img2 {
@@ -323,10 +302,10 @@
             .img1 {
                 display: block;
                 background: white;
-                /* justify-content:center; */
+
                 padding-left: 4vw;
                 padding-right: 5vw;
-                /* padding-bottom: 5vh; */
+
             }
 
             .started-button {
@@ -336,7 +315,6 @@
 
         }
 
-        /* @media only screen and (min-width:769px) and (max-width:992px) { */
             @media only screen and  (max-width:992px) {
             .footer-center-2 {
                 padding-left: 20px !important;
@@ -363,7 +341,7 @@
             .img1 {
                 display: block;
                 background: white;
-                /* justify-content:center; */
+
                 padding-left: 40px;
                 padding-right: 60px;
                 padding-bottom: 20px
@@ -378,32 +356,26 @@
             }
 
         }
-
         @media only screen  and (max-width:414px) {
             .footer-center-2 {
-                /* padding-left: 80px !important; */
+
             }
 
             .what-we {
-                /* margin-left: 180px !important; */
+
                 margin-left:10vw;
 
             }
 
             .weunderstand {
                 padding-left: 4vw !important;
-                /* margin-left: 10px !important; */
+
                 padding-top: 60px;
 
             }
 
             .weunderstand1 {
-                /* padding-left: 13vw !important; */
-                /* margin-left: 13vw !important; */
-                /* padding-top: 15px; */
-                /* max-height: 100%; */
-                /* max-width: 100%; */
-                /* width: 100vw !important; */
+
             }
 
             .img2 {
@@ -413,10 +385,10 @@
             .img1 {
                 display: none;
                 background: white;
-                /* justify-content:center; */
+
                 padding-left: 4vw;
                 padding-right: 5vw;
-                /* padding-bottom: 5vh; */
+
             }
 
             .started-button {
@@ -425,33 +397,26 @@
 
 
         }
-
-
         @media only screen  and (max-width:828px) {
             .footer-center-2 {
-                /* padding-left: 80px !important; */
+
             }
 
             .what-we {
-                /* margin-left: 180px !important; */
+
                 margin-left:10vw;
 
             }
 
             .weunderstand {
                 padding-left: 4vw !important;
-                /* margin-left: 10px !important; */
+
                 padding-top: 60px;
 
             }
 
             .weunderstand1 {
-                /* padding-left: 13vw !important; */
-                /* margin-left: 13vw !important; */
-                /* padding-top: 15px; */
-                /* max-height: 100%; */
-                /* max-width: 100%; */
-                /* width: 100vw !important; */
+
             }
 
             .img2 {
@@ -461,10 +426,10 @@
             .img1 {
                 display: block;
                 background: white;
-                /* justify-content:center; */
+
                 padding-left: 4vw;
                 padding-right: 5vw;
-                /* padding-bottom: 5vh; */
+
             }
 
             .started-button {
@@ -516,7 +481,7 @@
             }
 
             .started-button {
-                /* padding-top: 5px; */
+
                 padding-left: 38vw;
             }
 
@@ -524,26 +489,15 @@
                 padding-left: 20px !important;
                 margin-left: 10px !important;
                 padding-top: 30px !important;
-                /* height: 10px !important; */
+
             }
 
             .weunderstand1 {
-                /* padding-left:30px !important; */
-                /* margin-left: 20px!important; */
-                /* size: 30px !important; */
+
                 width: 90vw;
                 padding: 0 !important;
-
-                /* max-width:300px !important;
-        max-height: 300px !important; */
-                /* width: 450px !important;
-        height: 400px !important; */
-                /* padding-top:50px!important; */
             }
         }
-
-
-
         @media only screen and (min-width: 577px) and (max-width:768px) {
             .footer-center-2 {
                 padding-left: 40px !important;
@@ -559,7 +513,6 @@
                 padding-left: 20px !important;
                 margin-left: 10px !important;
                 padding-top: 30px !important;
-                /* background: #effaff; */
             }
 
             .weunderstand1 {
@@ -573,7 +526,6 @@
             .img1 {
                 display: block;
                 background: white;
-                /* justify-content:center; */
                 padding-left: 40px;
                 padding-right: 10px;
                 padding-bottom: 20px
@@ -588,10 +540,9 @@
             }
 
         }
-
         @media only screen and (max-width: 384px) {
             .footer-center-2 {
-                /* padding-left: 150px !important; */
+
             }
 
             .university-style {
@@ -600,24 +551,19 @@
 
 
             .weunderstand {
-                /* padding-left:20px !important; */
+
                 padding-left: 13px !important;
 
-                /* margin-left: 28px !important; */
+
                 padding-top: 27px !important;
-                /* height: 10px !important; */
+
             }
 
             .weunderstand1 {
-                /* padding-left:30px !important; */
+
                 margin-left: 40px !important;
                 margin-right: 10px !important;
-                /* size: 30px !important; */
-                /* width:auto !important; */
-                /* height: auto !important; */
-                /* width: 450px !important;
-        height: 400px !important; */
-                /* padding-top:50px!important; */
+
 
             }
 
@@ -628,26 +574,23 @@
             .img2 {
                 display: block;
                 background: white;
-                /* padding-left: 150px;
-    padding-top: 10px; */
+
                 padding-right: 10%;
                 padding-left: 10%;
             }
 
             .started-button {
                 padding-top: 5px;
-                /* padding-left:210px ; */
+
                 padding-left: 30%;
                 padding-right: 30%;
             }
 
         }
-
-
         @media only screen and (max-width: 390px) {
             .started-button {
                 padding-left: 120px;
-                /* padding-top: 0px; */
+
             }
 
             .weunderstand {
@@ -679,10 +622,6 @@
             }
 
         }
-
-
-
-
         @media only screen and (max-width: 360px) {
             .footer-center-2 {
                 padding-left: 80px !important;
@@ -723,26 +662,19 @@
                 padding-left: 20px !important;
                 margin-left: 10px !important;
                 padding-top: 30px !important;
-                /* height: 10px !important; */
+
             }
 
             .weunderstand1 {
-                /* padding-left:30px !important; */
-                /* margin-left: 20px!important; */
-                /* size: 30px !important; */
+
                 width: 75vw;
-                /* max-width:300px !important;
-        max-height: 300px !important; */
-                /* width: 450px !important;
-        height: 400px !important; */
-                /* padding-top:50px!important; */
+
             }
         }
-
         @media only screen and (max-width: 428px) {
             .started-button {
                 padding-left: 120px;
-                /* padding-top: 0px; */
+
             }
 
             .weunderstand {
@@ -774,7 +706,6 @@
             }
 
         }
-
         @media only screen and (max-width: 375px) {
             .started-button {
                 padding-left: 120px;
@@ -811,7 +742,6 @@
             }
 
         }
-
         @media only screen and (min-width:1080px) and (max-width:1920px) {
             .segment1 {
                 position: absolute !important;
@@ -821,7 +751,7 @@
                 position: absolute !important;
                 left: 30px !important;
             }
-        }
+        } */
 
 
         /* =====================================================media queries ends=========================================================== */
@@ -887,9 +817,10 @@
 
 
         <!-- 1. We all understand section -->
-        {{-- @include('layouts.partials.we_all_understand') --}}
+        @include('layouts.partials.we_all_understand')
         <!-- We all understand section over -->
-        <div class=" row">
+       {{-- ============================================we understand code =========================================================== --}}
+        {{-- <div class=" row">
 
             <div class="col-lg-6 col-md-5 h-50 pr-0  font-bold capitalize text-4xl leading-none weunderstand  "
                 data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-quad"
@@ -903,10 +834,10 @@
                 </div>
             </div>
             <div class=" col-lg-6 col-md-5 animate__animated animate__zoomInRight   weunderstand1">@svg('images/landing page/how_it_works_img.svg')</div>
-        </div>
+        </div> --}}
 
 
-
+{{-- ======================================[we understand code here]======================================================================================= --}}
 
         <!-- 2. Easy 6 Steps section -->
         <div class="row bg-white justify-center content-end h-14 pb-4 pt-20 pb-20 pl-3 font-bold text-4xl"
@@ -1258,8 +1189,8 @@
     @include('layouts.partials.footer1')
 </div>
 
-<script>
-    // AOS.init();
+{{-- <script>
+    AOS.init();
     $(document).ready(function(){
         if($(window).width() == 992){
             $(".copyright-main-div").toggleClass('md:justify-center md:justify-start');
@@ -1615,7 +1546,7 @@
             $(".comp4-div").addClass('lg:pl-16');
         }
     });
-</script>
+</script> --}}
 
 </body>
 

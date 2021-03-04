@@ -47,7 +47,7 @@ body {
 }
 .togglebtn {
   position: absolute;
-  top: 29vh;
+  top: 6rem;
   right: 75vw;
   display: none;
   flex-direction: column;
@@ -65,10 +65,11 @@ body {
 @media only screen and (max-width: 600px) {
     .login-btn{
     display: block !important;
-    width: 25vw;
-    height: 10vh;
+    width: 8rem;
+    height: 2rem;
     top:14vh;
-    margin-left: 71vw;
+    margin-left: 13rem;
+    padding-top: .8rem;
     }
   .togglebtn {
     display: flex;
