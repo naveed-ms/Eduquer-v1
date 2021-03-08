@@ -24,9 +24,8 @@
     {{-- <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> --}}
     @yield('landingpage_styles')
     <style>
-        html{
+        html {}
 
-        }
         button {
             /* float: right; */
             padding: 4px, 18px;
@@ -69,10 +68,14 @@
             background-color: #57d4f1 !important;
         }
 
-        .section1 {
-            padding-top: 60px;
-            padding-bottom: 30px;
-            padding-left: 40px;
+
+        .footer-desktop {
+            display: block !important;
+        }
+
+        .footer-mobile {
+            display: none !important;
+
         }
 
         .segment1 {
@@ -84,16 +87,16 @@
             padding-bottom: 10px;
         }
 
-        .segment3 {
+        /* .segment3 {
             float: left;
             padding-top: 20px;
             padding-left: 40px;
-        }
+        } */
 
         .segment5 {
             /* float: right; */
             /* padding-right: 50px; */
-            padding-top: 40px;
+            /* padding-top: 40px; */
             /* padding-left:130px; */
         }
 
@@ -111,7 +114,446 @@
 
         }
 
+        .easy_6 {
+            font-size: 6rem;
+            padding-top: 11rem;
+            padding-bottom: 6rem;
+        }
+
+        /* .img2 {
+            display: block !important;
+    padding-left: 13vw;
+
+        } */
+        .img2 {
+            display: none !important;
+        }
+
+        .img1 {
+            display: block !important;
+    padding-left: 6.8vw;
+    padding-right: 6.8vw;
+    background: white;
+        }
+
+        .started-button {
+            font-size: 2rem !important;
+            margin-top: 3.5rem;
+            padding: 1rem 2.7rem 1rem 2.5rem;
+            /* margin-left: 4rem; */
+
+        }
+
+        .mobile-copyright {
+            display: none;
+
+        }
+
+        .mobile-copyright1 {
+            padding-top: 2.1rem;
+            font-size: 1.2rem;
+            color: white;
+            padding-bottom: 2.3rem;
+            padding-left: 25vw;
+        }
+
+        .desktop-copyright {
+            display: block;
+        }
+        .what-we1 {
+                padding-top: 5.8rem;
+    padding-left: 7.3rem;
+            }
+            .what-we{
+                padding-top: 16vh;
+    text-align: right;
+    font-size: 1.7rem;
+    padding-right: 9.4rem;
+    /* padding-left: -4.5rem; */
+    /* line-height: 4.58rem !important; */
+
+            }
+            .learn-more {
+                margin-left: -5vw;
+                margin-bottom: 5.2rem;
+                margin-top: 2.2rem;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .recommended{
+                font-size: 1.8rem;
+                padding-top: 14.4rem;
+                padding-left: 7.3rem;
+                color:#9e9e9e;
+
+                /* padding-bottom: .3rem */
+
+
+
+            }
+            .Oppurtunities{
+                padding-left: 7.3rem;
+                font-size: 6rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            }
+            .partnerships{
+                padding-left: 7.3rem;
+                color: #9e9e9e;
+                font-size: 2rem;
+                padding-right: 15rem;
+                padding-top: 2rem;
+            }
+            .reputation{
+                padding-left: 7.3rem;
+                color: #dedede;
+                font-size:1.4rem;
+                padding-right: 15rem;
+                padding-top: 2rem;
+
+
+            }
+            .mobile-vesrion-uni{
+                display: none;
+            }
+            .desktop-flags{
+                display: block !important;
+                /* padding-right:10vw; */
+                /* padding-left: 10vw; */
+                /* justify-content:center; */
+                /* width: 80rem !important; */
+                /* padding-left: 13vw; */
+
+            }
+            .mobile-flags{
+                display: none;
+            }
+.desktop-vesrion-uni{
+    display:block !important;
+    padding-top: 15.2rem;
+    padding-right: 2vw;
+
+}
+.view-all1{
+padding-left:30vw;
+}
+.view-all2{
+font-size: 2rem;
+padding-left: 5vw;
+padding-right: 5vw;
+padding-top: 2.5vh;
+padding-bottom: 2.5vh;
+border: solid 8px
+}
+.our-countries {
+                padding-top: 5rem;
+                padding-bottom: 4.8rem;
+            }
+
+.pdng{
+    padding-right:4vw;
+
+}
+
+
+/* ===================================================footer-desktop================================================================================================ */
+
+.desktop-section1{
+    padding-top: 10vh;
+    padding-down: 20vh;
+    font-size: 3vw;
+    padding-left: 8vw;
+    /* margin-left: 2.8rem; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.desktop-started-button1{
+    margin-left: 10vw;
+    margin-bottom: 1vh;
+    font-size: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    }
+    .segment5{
+        padding-bottom: 17vh;
+    font-size: 1.5vw;
+    padding-top: 11vh;
+    padding-left: 8vw;
+
+    }
+
+.desktop-segment6{
+    padding-bottom: 17vh;
+    font-size: 1.5vw !important;
+    padding-top: 11vh;
+    padding-left: 3vw;
+}
+.copy-right-one{
+    padding-left: 9vw;
+    font-size: 1.4vw;
+
+}
+.copy-right-two{
+    padding-left: 46vw;
+    /* font-size: 1.4vw; */
+    padding-top: 2vh;
+
+}
+
+/* footer-desktop-end======================================================================================== */
+
+
+
         /* ================================media queries set========================================================================== */
+
+        @media only screen and (max-width:600px) {
+
+            .easy_6 {
+                font-size: 2.6rem;
+                padding-top: 4.2rem;
+                padding-bottom: 4.8rem;
+            }
+
+            .img2 {
+                display: block !important;
+                padding-left: 12vw;
+                background: white;
+            }
+
+            .img1 {
+                display: none !important;
+            }
+
+
+            .started-button {
+                /* width: 13.1rem !important;
+                font-size: 1.2rem !important;
+                padding-top: 1.1rem !important;
+                padding-bottom: 1.1rem !important;
+                border-radius: 80px !important;
+                margin-left: 30vw !important;
+                margin-right: 6rem !important;
+                margin-top: 2rem !important;
+                margin-bottom: 5.2rem !important; */
+                font-size: 2rem !important;
+            margin-top: 3.5rem;
+            padding: 1rem 2.7rem 1rem 2.5rem;
+            }
+
+            .what-we1 {
+                padding-left: 5.3rem !important;
+                padding-right: 4.3rem !important;
+                margin-top: 4.1rem !important;
+                padding-top: 1rem !important;
+            }
+
+            .what-we {
+                padding-top: 0rem !important;
+                text-align: center;
+                font-size: 1.7rem !important;
+                padding-right: 3.4rem !important;
+                padding-left: 4.5rem !important;
+                /* line-height: 1.58rem !important; */
+                margin-bottom: 2.6rem !important;
+            }
+
+            .recommended {
+                font-size: 0.9rem;
+                /* margin-top: 4.8rem; */
+                text-align: center;
+                padding-left: 5.1rem;
+                padding-right: 5.6rem;
+                padding-top: 4rem;
+
+            }
+
+            .Oppurtunities {
+                font-size: 2.6rem;
+                text-align: center;
+                padding-left: 7.6rem;
+                padding-right: 7.1rem;
+                font-family: Segoe UI;
+                padding-bottom: 2.0rem;
+            }
+
+            .partnerships {
+                text-align: center;
+                /* line-height: .7rem; */
+                padding-left: 4.3rem;
+                padding-right: 3.6rem;
+                font-size: 1.6rem;
+            }
+
+            .reputation {
+                text-align: center;
+                padding-left: 4.5rem;
+                padding-right: 3.8rem;
+                padding-bottom: .2rem;
+                font-size: 1.1rem;
+
+            }
+            .desktop-flags{
+                display: none !important;
+            }
+            .mobile-flags{
+                display: block !important;
+            }
+
+
+            .mobile-vesrion-uni {
+                display: block !important;
+                /* margin-top: 4.4rem; */
+                /* margin-left: 0.5rem; */
+                /* margin-right: 0.2rem; */
+                /* width: 80vw; */
+                /* padding-bottom: 2.5rem; */
+            }
+            .desktop-vesrion-uni{
+                display: none !important;
+            }
+
+            .view-all {
+                /* margin-left: 30vw; */
+                /* margin-right: 50vw; */
+                width: 12.1rem;
+                height: 2.8rem;
+                font-size: 1rem !important;
+                margin-bottom: 5.2rem;
+                margin-top: 2.5rem;
+            }
+            .view-all3{
+                padding-left:32vw;
+
+            }
+
+            .learn-more {
+                margin-left: -5vw;
+                margin-bottom: 5.2rem;
+                margin-top: 2.2rem;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .our-countries {
+                padding-top: 5rem;
+                padding-bottom: 4.8rem;
+            }
+
+            .gorilla1 {
+                background: #effaff !important;
+                padding-bottom: 6rem;
+            }
+
+
+
+            /* ===================================================footer================================================== */
+            .section1 {
+                text-align: center;
+                padding-top: 4.9rem;
+                font-size: 2.6rem !important;
+                font-family: Segoe UI;
+                width: auto;
+                padding-left: 3.0rem;
+                padding-right: 3.1rem !important;
+            }
+
+            .started-button1 {
+                width: 13.1rem;
+                font-size: 1.2rem;
+                padding-top: 1.1rem;
+                padding-bottom: 1.1rem;
+                border-radius: 80px;
+                margin-left: 34vw;
+                /* margin-right: 16rem; */
+                margin-top: 3rem;
+                margin-bottom: 5.2rem;
+            }
+
+
+            .segment5 {
+                display: none;
+            }
+
+            .desktop-segment6{
+                display: none;
+            }
+
+            .footer-mobile {
+                display: block !important;
+
+            }
+
+            .footer-desktop {
+                display: none !important;
+            }
+
+            .Mississauga {
+                line-height: 7vh;
+                font-size: 1.2rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: white;
+                padding-left: 11vw;
+                padding-right: 5.1rem;
+                padding-top: 2.4rem;
+                text-align: center;
+
+
+            }
+
+            .phone {
+                font-size: 1.2rem;
+                /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+                color: white;
+                padding-left: 20vw;
+                padding-right: 9.1rem;
+                padding-top: 2.4rem;
+                text-align: center;
+            }
+
+            .print {
+                font-size: 1.2rem;
+                /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+                color: white;
+                padding-left: 20vw;
+                padding-right: 9.1rem;
+                padding-top: 2.4rem;
+                text-align: center;
+            }
+
+            .email3 {
+                font-size: 1.2rem;
+                /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+                color: white;
+                padding-left: 20vw;
+                padding-right: 9.1rem;
+                padding-top: 2.4rem;
+                text-align: center;
+            }
+
+            .social-media {
+                padding-bottom: 2rem;
+                padding-top: 8vh;
+                padding-left: 27vw;
+            }
+
+            .mobile-copyright {
+                display: block;
+
+
+            }
+
+            .desktop-copyright {
+                display: none;
+            }
+
+        }
+
+
+
+
+
         /* @media only screen and (min-width:3024px){
             .what-we {
             }
@@ -337,7 +779,6 @@
                 padding-top: 30px !important;
 
             }
-
             .img1 {
                 display: block;
                 background: white;
@@ -710,9 +1151,9 @@
             .started-button {
                 padding-left: 120px;
                 /* padding-top: 0px; */
-            }
+        }
 
-            .weunderstand {
+        /* .weunderstand {
                 padding-top: 32px !important;
                 padding-left: 40px !important;
                 margin-left: 0 !important;
@@ -739,19 +1180,9 @@
                 margin: 3px !important;
                 text-align: left !important;
                 padding-left: 35px !important;
-            }
+            } */
 
-        }
-        @media only screen and (min-width:1080px) and (max-width:1920px) {
-            .segment1 {
-                position: absolute !important;
-                left: 30px !important;
-            }
-            .segment2 {
-                position: absolute !important;
-                left: 30px !important;
-            }
-        } */
+
 
 
         /* =====================================================media queries ends=========================================================== */
@@ -762,11 +1193,7 @@
             background-color: #effaff;
         }
 
-        .recommended {
-            color: #899ea7;
-            letter-spacing: 2px;
-            font-size: 10px;
-        }
+
 
 
 
@@ -801,9 +1228,15 @@
 .img2{
     display: none !important;
 } */
-        .img3 {
+        /* .img1 {
             display: none;
         }
+.img2 {
+            display: none;
+        }
+       .img3 {
+            display: none;
+        } */
 
     </style>
 </head>
@@ -819,7 +1252,7 @@
         <!-- 1. We all understand section -->
         @include('layouts.partials.we_all_understand')
         <!-- We all understand section over -->
-       {{-- ============================================we understand code =========================================================== --}}
+        {{-- ============================================we understand code =========================================================== --}}
         {{-- <div class=" row">
 
             <div class="col-lg-6 col-md-5 h-50 pr-0  font-bold capitalize text-4xl leading-none weunderstand  "
@@ -837,13 +1270,13 @@
         </div> --}}
 
 
-{{-- ======================================[we understand code here]======================================================================================= --}}
+        {{-- ======================================[we understand code here]======================================================================================= --}}
 
         <!-- 2. Easy 6 Steps section -->
-        <div class="row bg-white justify-center content-end h-14 pb-4 pt-20 pb-20 pl-3 font-bold text-4xl"
-            data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad" style="color:#1d3270;">Easy 6
+        <div class="row bg-white justify-center content-end  font-bold easy_6" data-aos="fade-up"
+            data-aos-duration="2000" data-aos-easing="ease-in-quad" style="color:#1d3270;">Easy 6
             Step Process</div>
-        <div class="img1  animate__animated  animate__bounceIn justify-center content-center " data-aos="zoom-in">
+        <div class="img1  animate__animated   animate__bounceIn justify-center content-center " data-aos="zoom-in">
             @svg('images/landing page/s6-5.svg', )</div>
         <div class="img2 animate__animated  animate__bounceIn" data-aos="zoom-in">@svg('images/landing page/mobile-step-6.svg', )</div>
         {{-- <div  class="img3 animate__animated  animate__bounceIn" data-aos="zoom-in"  >@svg('images/landing page/tablet-S6.svg', )</div> --}}
@@ -900,8 +1333,9 @@
 
             </div> --}}
 
-        <div class="row h-20 bg-white  content-center pt-5 pb-5 started-button ">
-            <button class="w-36 h-10 text-white rounded text-base " data-aos="fade-left" data-aos-duration="200" data-aos-easing="ease-in-quad href="#" style="background-color:#1d3270;">Get
+        <div class="row bg-white  justify-center">
+            <button class=" text-white rounded text-base started-button " data-aos="fade-left" data-aos-duration="200"
+                data-aos-easing="ease-in-quad "href=" #" style="background-color:#1d3270;">Get
                 Started&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></button>
         </div>
 
@@ -912,58 +1346,121 @@
 
 
 
-        <div class="row  theme-bg-2pt-4 pb-4 ">
+        <div class="row  theme-bg-2pt-4  ">
             {{-- animate__animated animate__fadeInDown --}}
-            <div class="col-lg-5 col-md-6 col-sm-12 pt6 what-we1" data-aos="fade-down" data-aos-duration="2500"
+            <div class="col-lg  what-we1" data-aos="fade-down" data-aos-duration="2500"
                 data-aos-easing="ease-in-quad">
                 <div>@svg('images/landing page/what_we_do_img.svg' ,style="width: 100% ;height:100%")</div>
             </div>
-            <div class=" col-lg-4 col-md-5 col-sm-12  pt-4 sm:pt-7 sm:pt-7 lg:pt-7 md:pt-7 pr-4   what-we  "
-                data-aos="fade-up" data-aos-duration="200" data-aos-easing="ease-in-quad">
+            <div class=" col-lg    what-we  " data-aos="fade-up" data-aos-duration="200"
+                data-aos-easing="ease-in-quad">
                 {{-- animate__animated animate__fadeInUp --}}
 
-                <div class="tracking-widest text-xs" style="color:#899ea7">ABOUT US</div>
-                <div class="font-bold text-4xl pt-1" style="color:#1d3270" data-aos="fade-up">What We Do</div>
-                <p class="text-base pt-3 leading-tight">We provide a wide range of services to support you with your
+                <div class="tracking-widest text-md pt-5" style="color:#899ea7">ABOUT US</div>
+                <div class="font-bold text-6xl pt-1" style="color:#1d3270 " data-aos="fade-up">What We Do</div>
+                <p class="pt-4">We provide a wide range of services to support you with your
                     international education needs. If you are dreaming of studying abroad, we will get you there. From
                     course information to career advice, we are dedicated to you and your future.</p>
-                <div class="text-lg pt-4 pb-4" data-aos="fade-left" data-aos-duration="500"
-                    data-aos-easing="ease-in-quad">
-                    <button class="w-36 h-10 text-white rounded " href="#" style="background-color:#1d3270;">Learn
+                <div class="text-2lg " data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                    <button class=" text-white rounded learn-more " href="#"
+                        style="background-color:#1d3270; width:13.2rem; font size:1.2rem;">Learn
                         More</button>
 
                 </div>
             </div>
+
         </div>
         <!-- What we do section over -->
 
         <!-- 4. Access to more opportunities section -->
         {{-- ==================================================================================================================================================== --}}
         <div class="gorilla">
-            <div class="row   bg-white pt-4   animate__animated animate__bounceIn" style="width:100%;">
+            <div class="row   bg-white our-countries   animate__animated animate__bounceIn" style="width:100%;">
 
-                <div class="col-lg-4 col-md-10 col-sm-12 pl-4" data-aos="fade-right" data-aos-duration="1500"
+                <div class="col-lg-6 col-md-12 col-sm-12 our-countries-1  " data-aos="fade-right" data-aos-duration="1500"
                     data-aos-easing="ease-in-quad">
-                    <div class="recommended pt-1">OUR *RECOMMENDED UNIVERSITIES</div>
-                    <div class="font-bold text-4xl pt-3 pb-2" style="color:#1d3270">Access to More <br> Opportunities
+                    <div class="recommended" style="font-size: 0.9rem;text">OUR *RECOMMENDED UNIVERSITIES</div>
+                    <div class="font-bold Oppurtunities" style="color:#1d3270">Access to More <br> Opportunities
                     </div>
-                    <p class="text-base pt-3 leading-tight">Éduquer has built partnerships with 1,200+
+                    <p class=" partnerships">Éduquer has built partnerships with 1,200+
                         colleges, universities, primary, and secondary
                         schools around the world.</p>
-                    <div class="  my-2" style="color:#c9c9c9; font-size: 10px;">
+                    <div class=" reputation my-2" style="color:#c9c9c9; font-size: 10px;">
                         <p>*Éduquer recommends these universities & colleges based on their performance and reputation.
                             Éduquer may not be associated with all of these universities and colleges.</p>
                     </div>
-                    <div class="pt-4 pb-4">
-                        <button class="w-36 h-10 text-white  rounded" href="#" style="background-color:#1d3270;">Get
+                    {{-- <div class="">
+                        <button class=" text-white started-button rounded" href="#"
+                            style="background-color:#1d3270;">Get
                             Started&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-                    </div>
+                    </div> --}}
 
                 </div>
+
+
+                <div class="col-lg-6 col-md-12 col-sm-12 ">
+                    <div class="desktop-vesrion-uni">
+                    <div class="row">
+
+                        <div class="col ">
+
+                                <div>
+                                    <div class="w-30 h-40 pb-5 pt-5 pl-3 pr-4">@svg('images/landing page/partner universities/The University of Sydney Logo.svg', )</div>
+                                    <div class="w-30 h-40 pb-5 pl-3 pr-4">@svg('images/landing page/partner universities/University of Toronto Logo.svg',  )</div>
+                                    <div class="w-30 h-40 pb-5 pl-3 pr-4">@svg('images/landing page/partner universities/City University of New York Logo.svg', )</div>
+                                    <div class="w-30 h-40 pb-5 pl-3 pr-4">@svg('images/landing page/partner universities/University of Kent Logo.svg', )</div>
+                                </div>
+                            </div>
+
+                                <div class="col">
+                                <div class="w-30 h-40 pl-3 pr-4  ">@svg('images/landing page/partner universities/The University of Queensland Logo.svg')</div>
+                                <div class="w-30 h-40 pl-3 pr-4 pt-5 ">@svg('images/landing page/partner universities/The University of Western Australia Logo.svg')</div>
+                                <div class="w-30 h-40 lg:mr-8  ">@svg('images/landing page/partner universities/Mcgill University Logo1.svg','h-full w-full' )</div>
+                                <div class="w-30 h-40 pl-3 pr-4 pt-5 ">@svg('images/landing page/partner universities/University of Washington Logo.svg', )</div>
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <div class="w-30 h-40 pb-5 pl-3 pr-4">@svg('images/landing page/partner universities/The University of Adelaide Logo.svg', )</div>
+                                    <div class="w-30 h-40 pb-5 pl-3 pr-4">@svg('images/landing page/partner universities/York University Logo.svg', )</div>
+                                    <div class="w-30 h-40 pb-5 pl-3 pr-4">@svg('images/landing page/partner universities/University of Baltimore Logo.svg',  )</div>
+                                    <div class="w-30 h-40 pb-5 pl-3 pr-4">@svg('images/landing page/partner universities/University of East London Logo.svg' )</div>
+                                </div>
+                            </div>
+
+                                <div class="col">
+                                <div class="w-30 h-40 pb-5 pl-3 pr-4">@svg('images/landing page/partner universities/University of Liverpool Logo.svg', )</div>
+                                <div class="w-30 h-40 pb-5 pl-3 pr-4">@svg('images/landing page/partner universities/University of Waterloo Logo.svg',  )</div>
+                                <div class="w-30 h-40 pb-5 pl-3 pr-4">@svg('images/landing page/partner universities/University of Texas Logo.svg' )</div>
+                                <div class="w-30 h-40 pb-5 pl-3 pr-4">@svg('images/landing page/partner universities/University of Nottingham Logo.svg' )</div>
+
+                            </div>
+                            </div>
+                            <div class="view-all1 ">
+                                <button class=" bg-white view-all2   rounded " href="#"
+                                    style="border: 2px solid #1d3270;">View All</button>
+                            </div>
+                    </div>
+{{-- @svg('images/unio.svg',) --}}
+<div class=" mobile-vesrion-uni">
+
+    {{-- @svg('images/unio.svg',) --}}
+
+                        @svg('images/landing page/university-group.svg' ,'w-full h-full');
+                        <div class="view-all3">
+                            <button class=" bg-white view-all  rounded " href="#"
+                                style="border: 2px solid #1d3270;">View All</button>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
                 {{-- animate__animated  animate__lightSpeedInRight --}}
 
                 <!-- University images -->
-                <div class="uni-first-col col-6 px-0 col-lg-2 col-md-3 col-sm-2 " data-aos="zoom-in">
+                {{-- <div class="uni-first-col col-6 px-0 col-lg-2 col-md-3 col-sm-2 " data-aos="zoom-in">
                     <div class="university-style">
                         <div class="w-28 h-28">@svg('images/landing page/partner universities/The University of Sydney Logo.svg', 'w-full h-full')</div>
                         <div class="w-28 h-28">@svg('images/landing page/partner universities/University of Toronto Logo.svg', 'w-full h-full')</div>
@@ -974,19 +1471,16 @@
                 </div>
                 <div class="uni-second-col col-6 px-0 col-lg-2 col-md-3 col-sm-2  " data-aos="zoom-in">
                     <div class="university-style university-style-2">
-                        <div class="w-20 h-28">@svg('images/landing page/partner universities/Mcgill University Logo.svg',
-                            'w-full h-full')</div>
+                        <div class="w-20 h-28">@svg('images/landing page/partner universities/Mcgill University Logo.svg','w-full h-full')</div>
                         <div class="w-28 h-28">@svg('images/landing page/partner universities/The University of Western Australia Logo.svg', 'w-full h-full')</div>
                         <div class="w-28 h-28">@svg('images/landing page/partner universities/The University of Queensland Logo.svg', 'w-full h-full')</div>
-
                         <div class="w-28 h-28">@svg('images/landing page/partner universities/University of Washington Logo.svg', 'w-full h-full')</div>
                     </div>
                 </div>
                 <div class="uni-third-col col-6 px-0 col-lg-2 col-md-3 col-sm-2  " data-aos="zoom-in">
                     <div class="university-style">
                         <div class="w-28 h-28">@svg('images/landing page/partner universities/The University of Adelaide Logo.svg', 'w-full h-full')</div>
-                        <div class="w-28 h-28">@svg('images/landing page/partner universities/York University Logo.svg',
-                            'w-full h-full')</div>
+                        <div class="w-28 h-28">@svg('images/landing page/partner universities/York University Logo.svg','w-full h-full')</div>
                         <div class="w-28 h-28">@svg('images/landing page/partner universities/University of Baltimore Logo.svg', 'w-full h-full')</div>
                         <div class="w-28 h-28">@svg('images/landing page/partner universities/University of East London Logo.svg', 'w-full h-full')</div>
                     </div>
@@ -994,152 +1488,292 @@
                 <div class="uni-fourth-col col-6 px-0 col-lg-2 col-md-3 col-sm-2 " data-aos="zoom-in">
                     <div class="university-style university-style-2">
                         <div class="w-28 h-28">@svg('images/landing page/partner universities/University of Liverpool Logo.svg', 'w-full h-full')</div>
-
                         <div class="w-28 h-28">@svg('images/landing page/partner universities/University of Waterloo Logo.svg', 'w-full h-full')</div>
-                        <div class="w-28 h-28">@svg('images/landing page/partner universities/University of Texas Logo.svg',
-                            'w-full h-full')</div>
+                        <div class="w-28 h-28">@svg('images/landing page/partner universities/University of Texas Logo.svg','w-full h-full')</div>
                         <div class="w-28 h-28">@svg('images/landing page/partner universities/University of Nottingham Logo.svg', 'w-full h-full')</div>
 
                     </div>
-                </div>
+                </div> --}}
 
             </div>
-            <div class="view-all-div col-6 px-0 col-lg-2 col-md-3 col-sm-2 px-0 pt-1 pb-5 ">
-                <button class="w-32 h-10 bg-white rounded btn btn-outline" href="#"
-                    style="border: 2px solid #1d3270;">View All</button>
+
+
+            </div>
+            <!-- University images over -->
+
+            {{-- ===================================================================================================================================================== --}}
+
+
+
+            <!-- Access to more opportunities section over -->
+
+            <!-- 5. We are helping section -->
+            <div class="gorilla1">
+                <div class="row text-center our-countries ">
+                    <div class="col" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                        <div style="color:#899ea7; letter-spacing: 2px; font-size: 15px;">OUR COUNTRIES</div>
+                        <p class="font-bold text-6xl pt-2 mb-0" style="color:#1d3270">We are helping students in the
+                            following
+                            countries</p>
+                        {{-- <p class="font-bold text-4xl mb-0" style="color:#1d3270">in the following countries</p> --}}
+                        <div class="text-center pt-3 " style="color:#2f2f2f;font-size:1.2rem">We are helping students
+                            from the
+                            following countries</div>
+                    </div>
+                </div>
+
+
+                <div class="row  flags justify-center pl-3 pr-3 pb-4 pt-4" >
+                    <div class="mobile-flags">@svg('images/complete-flags.svg','w-full h-full')
+                    </div>
+                    <div class="desktop-flags ">
+                        {{-- @svg('images/desktop-flags.svg') --}}
+                        <div class="row  flags " >
+
+                            <div class="col pb-3 pdng " data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                                <div class="pt-3">
+                                    <div>@svg('images\landing page\country flags\veitnam1.svg', 'w-full h-full')</div>
+                                    {{-- <div class="text-center">U.A.E</div> --}}
+                                </div>
+
+
+                                <div class="pt-5">
+                                    <div>@svg('images\landing page\country flags\China1.svg', 'w-full h-full')</div>
+                                    {{-- <div class="text-center">Saudi Arabia</div> --}}
+                                </div>
+                            </div>
+
+                            <div class="col  pb-3 pdng " data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                                <div class="pt-3 ">
+                                    <div>@svg('images\landing page\country flags\Hong Kong1.svg', 'w-full h-full')</div>
+                                    {{-- <div class="text-center">Kuwait</div> --}}
+                                </div>
+
+
+                                <div class="pt-3 ">
+                                    <div>@svg('images\landing page\country flags\Malaysia1.svg', 'w-full h-full')</div>
+                                    {{-- <div class="text-center">Qatar</div> --}}
+                                </div>
+                            </div>
+                            <div class="col pb-3 pdng" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                                <div class="pt-3 ">
+                                    <div>@svg('images\landing page\country flags\Bangladesh1.svg', 'w-full h-full')</div>
+                                    {{-- <div class="text-center">Turkey</div> --}}
+                                </div>
+
+
+                                <div class="pt-3 ">
+                                    <div>@svg('images\landing page\country flags\Indonesia1.svg', 'w-full h-full')</div>
+                                    {{-- <div class="text-center">Pakistan</div> --}}
+                                </div>
+                            </div>
+                            <div class="col pb-3 pdng  m-0" data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                                <div class=" pt-3">
+                                    <div>@svg('images\landing page\country flags\Pakistan1.svg', 'w-full h-full')</div>
+                                    {{-- <div class="text-center">India</div> --}}
+                                </div>
+
+                                <div class="pt-3">
+                                    <div>@svg('images\landing page\country flags\Turkey1.svg', 'w-full h-full' )</div>
+                                    {{-- <div class="text-center">U.A.E</div> --}}
+                                </div>
+                            </div>
+                            <div class="col  pdng pb-3  " data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                                <div class="pt-3">
+                                    <div>@svg('images\landing page\country flags\KSA1.svg', 'w-full h-full')</div>
+                                    {{-- <div class="text-center">Saudi Arabia</div>m-0 --}}
+                                </div>
+
+                                <div class="pt-3">
+                                    <div>@svg('images\landing page\country flags\Kuwait1.svg', 'w-full h-full')</div>
+                                    {{-- <div class="text-center">Kuwait</div> --}}
+                                </div>
+                            </div>
+                            <div class="col  pb-3  pdng  " data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                                <div class="pt-3">
+                                    <div>@svg('images\landing page\country flags\Qatar1.svg', 'w-full h-full')</div>
+                                    {{-- <div class="text-center">Qatar</div> --}}
+                                </div>
+
+                                <div class="pt-3 ">
+                                    <div>@svg('images\landing page\country flags\Srilanka1.svg', 'w-full h-full')</div>
+                                    {{-- <div class="text-center">Turkey</div> --}}
+                                </div>
+                            </div>
+                            <div class="col pb-3 pdng " data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                                <div class="pt-3">
+                                    <div>@svg('images\landing page\country flags\UAE1.svg', 'w-full h-full')</div>
+                                    {{-- <div class="text-center">Pakistan</div> --}}
+                                </div>
+
+                                <div class="pt-3 ">
+                                    <div>@svg('images\landing page\country flags\India1.svg',  'w-full h-full')</div>
+                                    {{-- <div class="text-center">India</div> --}}
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    {{-- <div class="row justify-center pb-5">
+                                        <div class="col-lg-1 col-md-2 col-sm-4">
+                                        <div class="w-24 h-24 mr-3">
+                                            <div>@svg('images\landing page\country flags\Vietnam.svg', 'w-full h-full')</div>
+                                            <div class="text-center">Vietnam</div>
+                                        </div>
+                                        </div>
+                                        <div class="col-lg-1 col-md-2 col-sm-4">
+                                        <div class="w-24 h-24 mr-3 ">
+                                            <div>@svg('images\landing page\country flags\China.svg', 'w-full h-full')</div>
+                                            <div class="text-center pt-2">China</div>
+                                        </div>
+                                        </div>
+                                        <div class="col-lg-1 col-md-2 col-sm-3">
+                                        <div class="w-24 h-24 mr-3 ">
+                                            <div>@svg('images\landing page\country flags\Hong Kong.svg', 'w-full h-full')</div>
+                                            <div class="text-center pt-2">Hong Kong</div>
+                                        </div>
+                                        </div>
+                                        <div class="col-lg-1 col-md-2 col-sm-4">
+                                        <div class="w-24 h-24 mr-3 ">
+                                            <div>@svg('images\landing page\country flags\UAE.svg', 'w-full h-full')</div>
+                                            <div class="text-center">Malaysia</div>
+                                        </div>
+                                        </div>
+                                        <div class="col-lg-1 col-md-2 col-sm-4">
+                                        <div class="w-24 h-24 mr-3">
+                                            <div>@svg('images\landing page\country flags\Bangladesh.svg', 'w-full h-full')</div>
+                                            <div class="text-center">Bangladesh</div>
+                                        </div>
+                                        </div>
+                                        <div class="col-lg-1 col-md-2 col-sm-4">
+                                        <div class="w-24 h-24 mr-3">
+                                            <div>@svg('images\landing page\country flags\Indonesia.svg', 'w-full h-full')</div>
+                                            <div class="text-center">Indonesia</div>
+                                        </div>
+                                        </div>
+                                        <div class="col-lg-1 col-md-2 col-sm-4">
+                                        <div class="w-24 h-24">
+                                            <div>@svg('images\landing page\country flags\Srilanka.svg', 'w-full h-full')</div>
+                                            <div class="text-center" style="padding-top: 17px;">Srilanka</div>
+                                        </div>
+                                        </div>
+                                    </div> --}}
+
+
+
+                    </div>
+                    {{-- <div class="col-4 col-lg-1 col-md-1 col-sm-6 col-xs-12 pb-3 pl-1  pr-1 m-2 justify-center"
+                    data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                    <div class="pt-3">
+                        <div>@svg('images/landing page/country flags/veitnam1.svg', 'w-24 h-24')</div>
+
+                    </div>
+
+
+                    <div class="pt-3 ">
+                        <div>@svg('images/landing page/country flags/China1.svg', 'w-24 h-24')</div>
+
+                    </div>
+                </div>
+                <div class="col-4 col-lg-1 col-md-1 col-sm-6  col-xs-12 pl-1  pr-1  pb-3 m-2  justify-center"
+                    data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                    <div class="pt-3 ">
+                        <div>@svg('images/landing page/country flags/Hong kong1.svg', 'w-24 h-24')</div>
+
+                    </div>
+
+
+                    <div class="pt-3 ">
+                        <div>@svg('images/landing page/country flags/Malaysia1.svg', 'w-24 h-24')</div>
+
+                    </div>
+                </div>
+                <div class="bangladesh-superdiv col-4 col-lg-1 col-md-2 col-sm-6 col-xs-12  pb-3 pl-1  pr-1 m-2 justify-center"
+                    data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                    <div class="pt-3 bangladesh-div">
+                        <div>@svg('images/landing page/country flags/Bangladesh1.svg', 'w-24 h-24')</div>
+
+                    </div>
+
+
+                    <div class="pt-3 ">
+                        <div>@svg('images/landing page/country flags/Indonesia1.svg', 'w-24 h-24')</div>
+
+                    </div>
+                </div>
+                <div class="col-4 col-lg-1 col-md-2 col-sm-6   col-xs-12 pb-3 pl-1  pr-1  m-2 justify-center"
+                    data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                    <div class="pt-3 pakistan-div">
+                        <div>@svg('images/landing page/country flags/Pakistan1.svg', 'w-24 h-24')</div>
+
+                    </div>
+
+                    <div class="pt-3">
+                        <div>@svg('images/landing page/country flags/Turkey1.svg', 'w-24 h-24' )</div>
+
+                    </div>
+                </div>
+                <div class="col-4 col-lg-1 col-md-1  col-sm-6 col-xs-12  pl-1  pr-1 pb-3  m-2 justify-center "
+                    data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                    <div class="pt-3 ksa-div">
+                        <div>@svg('images/landing page/country flags/KSA1.svg', 'w-24 h-24')</div>
+
+                    </div>
+
+                    <div class="pt-3">
+                        <div>@svg('images/landing page/country flags/Kuwait1.svg', 'w-24 h-24')</div>
+
+                    </div>
+                </div>
+                <div class="col-4 col-lg-1 col-md-1  col-sm-6 col-xs-12  pb-3 pl-1  pr-1 pb-3 m-2 justify-center"
+                    data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                    <div class="pt-3 qatar-div">
+                        <div>@svg('images/landing page/country flags/Qatar1.svg', 'w-24 h-24')</div>
+
+                    </div>
+
+                    <div class=" pt-3">
+                        <div>@svg('images/landing page/country flags/Srilanka1.svg', 'w-24 h-24')</div>
+
+                    </div>
+                </div>
+                <div class="col-4 col-lg-1 col-md-1  col-sm-6 col-xs-12 pb-3  pl-1  pr-1 pb-3 m-2 justify-center"
+                    data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                    <div class="pt-3 uae-div">
+                        <div>@svg('images/landing page/country flags/UAE1.svg', 'w-24 h-24')</div>
+
+                    </div>
+
+                    <div class="pt-3 ">
+                        <div>@svg('images/landing page/country flags/India1.svg', 'w-24 h-24')</div>
+
+                    </div>
+                </div>
+                <div class="col-4 col-lg-1 col-md-1  col-sm-6 col-xs-12 pb-3  pl-1  pr-1 pb-3 m-2 justify-center"
+                    data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
+                    <div class="pt-3 uae-div">
+                        <div>@svg('images/landing page/country flags/UAE1.svg', 'w-24 h-24')</div>
+
+                    </div>
+
+                    <div class="pt-3 ">
+                        <div>@svg('images/landing page/country flags/India1.svg', 'w-24 h-24')</div>
+                    </div>
+                </div> --}}
+
+                </div>
             </div>
 
         </div>
-        <!-- University images over -->
-
-        {{-- ===================================================================================================================================================== --}}
-
-
-
-        <!-- Access to more opportunities section over -->
-
-        <!-- 5. We are helping section -->
-        <div class="row text-center content-center pt-5">
-            <div class="col" data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
-                <div style="color:#899ea7; letter-spacing: 2px; font-size: 10px;">OUR COUNTRIES</div>
-                <p class="font-bold text-4xl pt-1 mb-0" style="color:#1d3270">We are helping students in the following
-                    countries</p>
-                {{-- <p class="font-bold text-4xl mb-0" style="color:#1d3270">in the following countries</p> --}}
-                <div class="text-xs tracking-widest pt-2" style="color:#2f2f2f">We are helping students from the
-                    following countries</div>
-            </div>
-        </div>
-
-
-        <div class="row justify-center flags pb-4 pt-4" style="width:100%">
-
-            <div class="col-4 col-lg-1 col-md-1 col-sm-6 col-xs-12 pb-3 pl-1  pr-1 m-2 justify-center"
-                data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
-                <div class="pt-3">
-                    <div>@svg('images/landing page/country flags/veitnam1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">U.A.E</div> --}}
-                </div>
-
-
-                <div class="pt-3 ">
-                    <div>@svg('images/landing page/country flags/China1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">Saudi Arabia</div> --}}
-                </div>
-            </div>
-            <div class="col-4 col-lg-1 col-md-1 col-sm-6  col-xs-12 pl-1  pr-1  pb-3 m-2  justify-center"
-                data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-quad">
-                <div class="pt-3 ">
-                    <div>@svg('images/landing page/country flags/Hong kong1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">Kuwait</div> --}}
-                </div>
-
-
-                <div class="pt-3 ">
-                    <div>@svg('images/landing page/country flags/Malaysia1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">Qatar</div> --}}
-                </div>
-            </div>
-            <div class="bangladesh-superdiv col-4 col-lg-1 col-md-2 col-sm-6 col-xs-12  pb-3 pl-1  pr-1 m-2 justify-center"
-                data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
-                <div class="pt-3 bangladesh-div">
-                    <div>@svg('images/landing page/country flags/Bangladesh1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">Turkey</div> --}}
-                </div>
-
-
-                <div class="pt-3 ">
-                    <div>@svg('images/landing page/country flags/Indonesia1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">Pakistan</div> --}}
-                </div>
-            </div>
-            <div class="col-4 col-lg-1 col-md-2 col-sm-6   col-xs-12 pb-3 pl-1  pr-1  m-2 justify-center"
-                data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-quad">
-                <div class="pt-3 pakistan-div">
-                    <div>@svg('images/landing page/country flags/Pakistan1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">India</div> --}}
-                </div>
-
-                <div class="pt-3">
-                    <div>@svg('images/landing page/country flags/Turkey1.svg', 'w-24 h-24' )</div>
-                    {{-- <div class="text-center">U.A.E</div> --}}
-                </div>
-            </div>
-            <div class="col-4 col-lg-1 col-md-1  col-sm-6 col-xs-12  pl-1  pr-1 pb-3  m-2 justify-center "
-                data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
-                <div class="pt-3 ksa-div">
-                    <div>@svg('images/landing page/country flags/KSA1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">Saudi Arabia</div> --}}
-                </div>
-
-                <div class="pt-3">
-                    <div>@svg('images/landing page/country flags/Kuwait1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">Kuwait</div> --}}
-                </div>
-            </div>
-            <div class="col-4 col-lg-1 col-md-1  col-sm-6 col-xs-12  pb-3 pl-1  pr-1 pb-3 m-2 justify-center"
-                data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-quad">
-                <div class="pt-3 qatar-div">
-                    <div>@svg('images/landing page/country flags/Qatar1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">Qatar</div> --}}
-                </div>
-
-                <div class=" pt-3">
-                    <div>@svg('images/landing page/country flags/Srilanka1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">Turkey</div> --}}
-                </div>
-            </div>
-            <div class="col-4 col-lg-1 col-md-1  col-sm-6 col-xs-12 pb-3  pl-1  pr-1 pb-3 m-2 justify-center"
-                data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
-                <div class="pt-3 uae-div">
-                    <div>@svg('images/landing page/country flags/UAE1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">Pakistan</div> --}}
-                </div>
-
-                <div class="pt-3 ">
-                    <div>@svg('images/landing page/country flags/India1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">India</div> --}}
-                </div>
-            </div>
-            <div class="col-4 col-lg-1 col-md-1  col-sm-6 col-xs-12 pb-3  pl-1  pr-1 pb-3 m-2 justify-center"
-                data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-quad">
-                <div class="pt-3 uae-div">
-                    <div>@svg('images/landing page/country flags/UAE1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">Pakistan</div> --}}
-                </div>
-
-                <div class="pt-3 ">
-                    <div>@svg('images/landing page/country flags/India1.svg', 'w-24 h-24')</div>
-                    {{-- <div class="text-center">India</div> --}}
-                </div>
-            </div>
-
-        </div>
-    </div>
 
 
 
 
-    {{-- <div class="row justify-center pb-5">
+        {{-- <div class="row justify-center pb-5">
                         <div class="col-lg-1 col-md-2 col-sm-4">
                         <div class="w-24 h-24 mr-3">
                             <div>@svg('images/landing page/country flags/Vietnam.svg', 'w-full h-full')</div>
@@ -1184,12 +1818,12 @@
                         </div>
                     </div> --}}
 
-    <!-- We are helping section over -->
-<div class="footer">
-    @include('layouts.partials.footer1')
-</div>
+        <!-- We are helping section over -->
+        <div class="footer">
+            @include('layouts.partials.footer1')
+        </div>
 
-{{-- <script>
+        {{-- <script>
     AOS.init();
     $(document).ready(function(){
         if($(window).width() == 992){
