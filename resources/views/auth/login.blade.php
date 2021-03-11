@@ -3,26 +3,33 @@
 @section('scripts')
     <script>
         $('#form-id').find('input').val('');
+
     </script>
 @endsection
 
 {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet"> --}}
 
 <style>
-    .container {
-        /* background-color:burlywood; */
+    /* =============================================================Login-Page-desktop-start=============================================================== */
+
+    .font1{
+        font-size:14px;
+
+    }.complete-col {
+        background: #effaff;
+    }
+
+    .login-btn2 {
+        border-radius: 18px;
+        font-size: 14px;
     }
 
     .sec1 {
-        /* background: #1d3270; */
-        background-color: eef9fe;
-        /* margin: 0px; */
+        background-color: #eef9fe;
         width: 80vw !important;
         height: 50vh !important;
         padding-left: 3vw;
-        /* padding-top: 3vh; */
-        /* margin-top: 10vh; */
-        /* float: right !important; */
+        padding-bottom: 4vh;
     }
 
     button {
@@ -66,24 +73,20 @@
         padding-top: 2vw;
         padding-left: 3vw;
         padding-right: 2vw;
-
-        width:100px;
-        /* align-items: center; */
+        width: 100px;
         background-color: f9fdff;
         border-bottom: none;
         border-radius: 5px;
         box-shadow: 0 0 15px rgba(214, 211, 211, 0.671);
-
+        padding-bottom: 4vh;
     }
 
     .register {
-        /* padding-bottom: 140x; */
+
         font-weight: bolder;
         font-family: Segoe UI;
         color: #1d3270;
         font-size: 35px;
-        /* overflow: hidden;
-    animation: animate 1s  ; */
     }
 
 
@@ -98,7 +101,6 @@
 
     input:focus {
         border: thin solid white;
-        /* border-bottom: solid medium #32cd32; */
         background-color: white;
     }
 
@@ -106,7 +108,6 @@
         color: #999;
         position: absolute;
         pointer-events: none;
-        /* left: 10px; */
         top: 10px;
         padding-left: 10px;
         transition: 0.4s;
@@ -138,122 +139,398 @@
         offset-position: initial;
     }
 
-    .fa-facebook {
-        padding-top: 6px;
+    /* =============================================================== header-desktop========================================================================== */
+    html {
+        font-size: 62.2%;
     }
 
-    .fa-twitter {
-        padding-top: 6px;
+    * {
+        box-sizing: border-box;
     }
 
-    .fa-instagram {
-        padding-top: 6px;
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 17px;
     }
 
-    .fa-youtube-play {
-        padding-top: 6px;
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #effaff;
+        color: #1d3270;
+
     }
 
-    .theme-bg-2 {
-        background-color: #effaff;
+    .logo {
+        font-size: 0px;
+        padding-top: 5rem;
+        margin: 11px;
+        margin-left: 2vw !important;
     }
 
-    .section1 {
-        padding-top: 60px;
-        padding-bottom: 30px;
-        padding-left: 40px;
+    .logo a {
+        text-decoration: none;
+        color: #35ccee;
+        margin-left: 20px;
+
     }
 
-    .segment1 {
-        float: right;
+    .navbar-links ul {
+        display: flex;
+        font-size: 2rem;
+        margin-right: 4rem;
     }
 
-    .segment2 {
-        float: right;
-        padding-bottom: 10px;
+    .navbar-links ul li {
+        list-style: none;
     }
 
-    .segment3 {
-        float: left;
-        padding-top: 20px;
-        padding-left: 40px;
+    .navbar-links ul li a {
+        text-decoration: none;
+        color: #35ccee;
+        padding: 5px 25px 5px 25px;
+        display: block;
+        font-size: 2rem;
     }
+
+    .navbar-links ul li a:hover {
+        background: transparent;
+        color: #000000;
+    }
+
+    .togglebtn {
+        position: absolute;
+        top: 78px;
+        right: 78vw;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 2.2rem;
+        height: 23px;
+    }
+
+    .line {
+        height: 3px;
+        width: 100%;
+        background: #1d3270;
+        border-radius: 13px;
+    }
+
+    .login-btn1 {
+        font-size: 2rem;
+        display: block !important;
+        width: 7rem;
+    }
+
+    .login-btn {
+        display: none !important;
+    }
+
+    .login-btn {
+        display: block;
+        margin-right: 11vh;
+    }
+
+
+    /* ===================================================footer-desktop================================================================================================ */
+
+    .footer-desktop {
+        display: block !important;
+    }
+
+    .footer-mobile {
+        display: none !important;
+
+    }
+
+    .desktop-section1 {
+        padding-top: 10vh;
+        padding-down: 20vh;
+        font-size: 3vw;
+        padding-left: 8vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .desktop-started-button1 {
+        width: 17.1vw;
+        font-size: 2.2vw;
+        padding-top: 1.1rem;
+        padding-bottom: 1.1rem;
+        margin-left: 10vw;
+        margin-bottom: 3.2rem;
+        border-radius: 18px;
+    }
+
 
     .segment5 {
-        /* float: right; */
-        /* padding-right: 50px; */
-        padding-top: 40px;
-        /* padding-left:130px; */
+        display: block;
+        padding-bottom: 17vh !important;
+        font-size: 1.5vw !important;
+        padding-top: 11vh !important;
+        padding-left: 8vw !important;
+
     }
 
-    .segment6 {
-        /* float: right; */
-        /* padding-right: 80px; */
-        padding-top: 20px;
+    .desktop-segment6 {
+        padding-bottom: 17vh;
+        font-size: 1.5vw !important;
+        padding-top: 11vh;
+        padding-left: 3vw;
+    }
+
+    .mobile-copyright {
+        display: none !important;
+
+    }
+
+    .copy-right-one {
+        display: block;
+        padding-left: 9vw;
+        font-size: 1.4vw;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .copy-right-two {
+        padding-left: 46vw !important;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 
     .container1 {
         width: 100%;
-        /* background: #1d3270 !important; */
-        background-image: url("images/footer1-bg.png") !important;
-        background: rgb(31, 61, 121);
-        background: linear-gradient(0deg, rgba(31, 61, 121, 1) 0%, rgba(46, 160, 202, 1) 92%, rgba(46, 160, 202, 1) 100%, rgba(46, 160, 202, 1) 100%);
-        background-repeat: round;
-
+        background: rgb(31, 61, 121) !important;
+        background: linear-gradient(0deg, rgba(31, 61, 121, 1) 0%, rgba(46, 160, 202, 1) 92%, rgba(46, 160, 202, 1) 100%, rgba(46, 160, 202, 1) 100%) !important;
     }
+
+    .desktop-copyright {
+        display: block !important;
+    }
+
+
+    /*=========================================================== footer-desktop-end========================================================
+       /* =============================================================== header-mobile========================================================================== */
+
+
+    @media only screen and (max-width: 600px) {
+        .login-btn {
+            font-size: 1.2rem;
+            display: block !important;
+            width: 7rem;
+            top: 14vh;
+            display: block !important;
+        }
+
+        .login-btn1 {
+            display: none !important;
+        }
+
+        .togglebtn {
+            display: flex;
+        }
+
+        .navbar-links {
+            display: none;
+            width: 100%;
+        }
+
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .navbar-links ul li {
+            text-align: center;
+        }
+
+        .navbar-links ul li a {
+            padding: 16px;
+            font-size: 2rem;
+            font-style: bold;
+        }
+
+        .navbar-links.active {
+            display: flex;
+        }
+    }
+
+    /* =============================================================== header-mobile-end ========================================================================== */
+
+
+    /* ===================================================footer-Mobile start ================================================== */
+
+    @media only screen and (max-width:600px) {
+
+        .copy-right-two {
+            display: none !important;
+        }
+
+        .segment3 {
+            justify-content: center !important;
+        }
+
+        .mobile-copyright1 {
+            font-size: 0.8rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+
+            padding-top: 2.4rem;
+            text-align: center;
+            padding-bottom: 10vh;
+            justify-content: center;
+        }
+
+        .section1 {
+            margin-bottom: 2rem !important;
+            justify-content: center !important;
+            text-align: center;
+            padding-top: 4rem;
+            font-size: 2rem !important;
+            font-family: Segoe UI;
+                   }
+
+        .started-button1 {
+            width: 12.1rem;
+            font-size: 1.2rem;
+            padding-top: 1.1rem;
+            padding-bottom: 1.1rem;
+            border-radius: 18px;
+            margin: 0 auto !important;
+            display: block;
+        }
+
+        .segment5 {
+            display: none;
+        }
+
+        .desktop-segment6 {
+            display: none;
+        }
+
+        .footer-mobile {
+            display: block !important;
+
+        }
+
+        .footer-desktop {
+            display: none !important;
+        }
+
+        .Mississauga {
+            font-size: 1.7rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            padding-left: 7vw;
+            padding-right: 6vw;
+            padding-top: 2.4rem;
+            text-align: center
+        }
+
+        .phone {
+            font-size: 1.7rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            padding-left: 7vw;
+            padding-right: 6vw;
+            padding-top: 2.4rem;
+            text-align: center
+        }
+
+        .print {
+            font-size: 1.7rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            padding-left: 7vw;
+            padding-right: 6vw;
+            padding-top: 2.4rem;
+            text-align: center
+        }
+
+        .email3 {
+            font-size: 1.7rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            padding-left: 7vw;
+            padding-right: 6vw;
+            padding-top: 2.4rem;
+            text-align: center
+        }
+
+        .social-media {
+            font-size: 1.7rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+
+            padding-top: 2.4rem;
+            text-align: center;
+            padding-bottom: 10vh;
+        }
+        .mobile-copyright {
+        display: block !important;
+    }
+
+    .desktop-copyright {
+        display: none !important;
+    }
+    }
+
+
+
+
+    /* =================================================footer-Mobile end ================================================== */
+
 
 </style>
 
-
 @section('content')
-
     @include('layouts.partials.header')
-    <div class="container-fluid theme-bg-2 pt-12  pt-sm-0">
+    <div class="container-fluid complete-col pt-12  pt-sm-0">
         <div class="row theme-bg-2 ">
-            <div
-                class="col-lg-6 col-md-12 col-sm-12 sec1 lg:pt- lg:mt-32 lg:pl-13 ml-3 md:pl-13 pl-13 animate__animated animate__fadeInRightBig ">
+            <div class="col-lg-6 col-md-12 lg:pt-16 lg:pb-12 md:pb-12 md:pt-12 mb-5">
                 @svg('images/Body-2.svg')
             </div>
-            <div class="col-lg-3  sec2   ml-3 sm:ml-4">
-                <div class="offset-lg-2 mb-3">
-                    <div class="register animate__animated animate__fadeInRightBig">Login</div>
-                    Does not have an account yet?
+            <div class="col-lg-5  sec2   mb-5">
+                <div class="offset-lg-1 mb-3 offset-md-2">
+                    <div class="register animate__animated animate__fadeInRightBig ">Login</div>
+                    <div style="font-size: 14px;">
+                        Does not have an account yet?
                     <a style="color: 57d4f1;font-family:Segoe UI" href="{{ url('register') }}">Sign Up</a>
                 </div>
-                <form method="POST" action="{{ route('login') }} " class="offset-lg-2">
+                    </div>
+
+                <form method="POST" action="{{ route('login') }} " class="offset-lg-1 offset-md-2">
                     @csrf
-                    <div class="col-md-8 mt-4 mb-4">
+                    <div class="col-md-8 col-sm-4 mt-4 mb-4">
                         <input id="email" type="email" placeholder=""
-                            class="form-control @error('email') is-invalid @enderror" name="email"
+                            class="form-control h-14 @error('email') is-invalid @enderror" name="email"
                             value="{{ isset($data) ? $data['email'] : old('email') }}" required autofocus>
-                        <label for="email">{{ __('E-Mail Address') }}</label>
+                        <label for="email" class ="font1">{{ __('E-Mail Address') }}</label>
                         @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
                     </div>
-                    <div class="col-md-8 mt-4">
+                    <div class="col-md-8 mt-4 col-sm-4">
                         <input id="password" placeholder="" type="password"
-                            class="form-control @error('password') is-invalid @enderror" name="password" value="" required>
-                        <label for="password">{{ __('Password') }}</label>
+                            class="form-control @error('password') is-invalid @enderror h-14" name="password" value="" required>
+                        <label for="password" class="font1">{{ __('Password') }}</label>
                         @error('password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
                     </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="form-check">
-                            <label class="form-check-label" for="remember">
-                                <input class="form-check-input" type="checkbox" name="remember" id="remember"
-                                    {{ old('remember') ? 'checked' : '' }}>
-                                {{ __('Remember Me') }}
-                            </label>
-                        </div>
-                    </div>
-                    {{-- <button type="submit" class="col-md-8 mt-4"> --}}
-                    <button type="submit" class="col-lg-7 col-11 col-md-7 rounded mt-4 ml-3 mb-1 pl-5 pr-5 text-white h-10"
+                    <button type="submit"
+                        class="col-lg-7 col-11 col-md-7  mt-4 ml-3 mb-1 pl-5 pr-5 login-btn2 text-white h-10"
                         style="background-color: #1d327d;">
                         <span>Login</span>
                     </button>
@@ -268,229 +545,6 @@
                 </form>
             </div>
         </div>
-    </div>
-    @include('layouts.partials.footer1')
-    <script>
-        $(document).ready(function(){
-            if($(window).width() == 992){
-                $(".copyright-main-div").toggleClass('md:justify-center md:justify-start');
-                $(".copyright-div").toggleClass('col-lg-3 col-lg-6');
-                $(".copyright-div").addClass('md:pl-11');
-                $(".socialmedia-div").addClass('offset-md-2 md:pl-20');
-                $(".segment1").addClass('absolute');
-                $(".segment2").addClass('absolute');
-                $(".copyright-div").toggleClass('md:pl-11 md:pl-5');
-                $(".section1").addClass('pl-3');
-                $(".segment5").addClass('pl-3');
-            } else if($(window).width() == 412){
-                $(".inner-left-div").removeClass('pl-4 ml-1');
-                $(".main-right-div").addClass('ml-3');
-                $(".right-nav").toggleClass('gap-x-8 gap-x-4');
-                $(".login-btn").toggleClass('ml-16 ml-7');
-                $(".section1").addClass('pl-5');
-                $(".segment3").addClass('pl-0 pt-4 mt-3');
-                $(".segment5").addClass('ml-4 pl-4');
-                $(".comp1-div").addClass('col-6 pl-10');
-                $(".comp2-div").addClass('col-6 pl-5');
-                $(".comp3-div").addClass('col-6 pl-10');
-                $(".comp4-div").addClass('col-6 pl-5');
-                $(".footer-center-2").addClass('pt-1');
-                $(".copyright-div").addClass('hidden');
-                $(".copyright-div-hidden").toggleClass('hidden visible col-7 col-12');
-                $(".copyright-main-div").toggleClass('h-16 h-28');
-                $(".copyright-div-hidden").addClass('pl-11 py-3');
-                $(".socialmedia-div").addClass('pl-10 pt-3');
-            } else if ($(window).width() == 384) {
-                $(".inner-left-div").removeClass('pl-4 ml-1');
-                $(".main-right-div").addClass('ml-3');
-                $(".right-nav").toggleClass('gap-x-8 gap-x-3');
-                $(".login-btn").toggleClass('ml-16 ml-2');
-                $(".segment3").addClass('pl-0 pt-4 mt-3');
-                $(".segment5").addClass('ml-3 pl-4');
-                $(".comp1-div").addClass('col-6 pl-10');
-                $(".comp2-div").addClass('col-6 pl-5');
-                $(".comp3-div").addClass('col-6 pl-10');
-                $(".comp4-div").addClass('col-6 pl-5');
-                $(".footer-center-2").addClass('pt-1');
-                $(".copyright-div").addClass('hidden');
-                $(".copyright-div-hidden").toggleClass('hidden visible col-7 col-12');
-                $(".copyright-main-div").toggleClass('h-16 h-28');
-                $(".copyright-div-hidden").addClass('pl-11 py-3');
-                $(".socialmedia-div").addClass('pl-10 pt-3');
-            } else if ($(window).width() == 390) { // iPhone 12
-                $(".inner-left-div").removeClass('pl-4 ml-1');
-                $(".main-right-div").addClass('ml-3');
-                $(".right-nav").toggleClass('gap-x-8 gap-x-3');
-                $(".login-btn").toggleClass('ml-16 ml-4');
-                $(".segment3").addClass('pl-0 pt-4 mt-3');
-                $(".segment5").addClass('ml-3 pl-4');
-                $(".comp1-div").addClass('col-6 pl-10');
-                $(".comp2-div").addClass('col-6 pl-5');
-                $(".comp3-div").addClass('col-6 pl-10');
-                $(".comp4-div").addClass('col-6 pl-5');
-                $(".footer-center-2").addClass('pt-1');
-                $(".copyright-div").addClass('hidden');
-                $(".copyright-div-hidden").toggleClass('hidden visible col-7 col-12');
-                $(".copyright-main-div").toggleClass('h-16 h-28');
-                $(".copyright-div-hidden").addClass('pl-11 py-3');
-                $(".socialmedia-div").addClass('pl-10 pt-3');
-            } else if ($(window).width() == 428) { // iPhone 12 Pro Max
-                $(".inner-left-div").removeClass('pl-4 ml-1');
-                $(".main-right-div").addClass('ml-3');
-                $(".right-nav").toggleClass('gap-x-8 gap-x-3');
-                $(".login-btn").toggleClass('ml-16 ml-14');
-                $(".segment3").addClass('pl-0 pt-4 mt-3');
-                $(".segment5").addClass('ml-3 pl-4');
-                $(".comp1-div").addClass('col-6 pl-10');
-                $(".comp2-div").addClass('col-6 pl-5');
-                $(".comp3-div").addClass('col-6 pl-10');
-                $(".comp4-div").addClass('col-6 pl-5');
-                $(".footer-center-2").addClass('pt-1');
-                $(".copyright-div").addClass('hidden');
-                $(".copyright-div-hidden").toggleClass('hidden visible col-7 col-12');
-                $(".copyright-main-div").toggleClass('h-16 h-28');
-                $(".copyright-div-hidden").addClass('pl-11 py-3');
-                $(".socialmedia-div").addClass('pl-10 pt-3');
-            } else if ($(window).width() == 414) { // iPhone XR
-                $(".inner-left-div").removeClass('pl-4 ml-1');
-                $(".main-right-div").addClass('ml-3');
-                $(".right-nav").toggleClass('gap-x-8 gap-x-5');
-                $(".login-btn").toggleClass('ml-16 ml-3');
-                $(".segment3").addClass('pl-0 pt-4 mt-3');
-                $(".segment5").addClass('ml-3 pl-4');
-                $(".comp1-div").addClass('col-6 pl-10');
-                $(".comp2-div").addClass('col-6 pl-5');
-                $(".comp3-div").addClass('col-6 pl-10');
-                $(".comp4-div").addClass('col-6 pl-5');
-                $(".footer-center-2").addClass('pt-1');
-                $(".copyright-div").addClass('hidden');
-                $(".copyright-div-hidden").toggleClass('hidden visible col-7 col-12');
-                $(".copyright-main-div").toggleClass('h-16 h-28');
-                $(".copyright-div-hidden").addClass('pl-11 py-3');
-                $(".socialmedia-div").addClass('pl-10 pt-3');
-            } else if ($(window).width() == 375) { // iPhone X
-                $(".inner-left-div").removeClass('pl-4 ml-1');
-                $(".main-right-div").addClass('ml-3');
-                $(".right-nav").toggleClass('gap-x-8 gap-x-3');
-                $(".login-btn").toggleClass('ml-16 ml-0');
-                $(".segment3").addClass('pl-0 pt-4 mt-3');
-                $(".segment5").addClass('ml-3 pl-4');
-                $(".comp1-div").addClass('col-6 pl-10');
-                $(".comp2-div").addClass('col-6 pl-5');
-                $(".comp3-div").addClass('col-6 pl-10');
-                $(".comp4-div").addClass('col-6 pl-5');
-                $(".footer-center-2").addClass('pt-1');
-                $(".copyright-div").addClass('hidden');
-                $(".copyright-div-hidden").toggleClass('hidden visible col-7 col-12');
-                $(".copyright-main-div").toggleClass('h-16 h-28');
-                $(".copyright-div-hidden").addClass('pl-11 py-3');
-                $(".socialmedia-div").addClass('pl-10 pt-3');
-            } else if ($(window).width() == 1920) { // Desktop viewport 1
-                $(".main-right-div").toggleClass('offset-lg-3 offset-lg-5');
-                $(".section1").addClass('pl-5');
-                $(".comp1-div").parent().addClass('pl-4');
-                $( ".section1-child").toggleClass('col-lg-6 col-lg-5');
-                $(".copyright-main-div").toggleClass("lg:justify-around lg:justify-start");
-                $(".copyright-div").addClass("lg:pl-20").toggleClass('lg:text-right lg:text-left');
-                $(".socialmedia-div").addClass("offset-lg-6 lg:pl-56");
-                $( ".section1-child").toggleClass('col-lg-6 col-lg-5');
-                $( ".footer-center-2").toggleClass('justify-center justify-start');
-                $( ".footer-center-2").toggleClass('pl-4 lg:pl-20');
-                $(".comp1-div").addClass('lg:pl-32');
-                $(".comp2-div").addClass('lg:pl-32');
-                $(".comp3-div").addClass('lg:pl-32');
-                $(".comp4-div").addClass('lg:pl-32');
-                $(".segment1").addClass('lg:absolute lg:pl-9');
-                $(".segment2").addClass('lg:absolute lg:pl-9');
-                $(".segment5").addClass('lg:pl-2');
-            } else if ($(window).width() == 1024) { // iPad Pro
-                $(".main-right-div").toggleClass('offset-lg-3 offset-lg-2');
-                $(".login-btn").toggleClass('lg:ml-0 lg:ml-2');
-                $(".comp1-div").parent().addClass('pl-4');
-                $(".copyright-div").addClass("pl-4 ml-2");
-                $( ".section1-child").toggleClass('col-lg-6 col-lg-5');
-                $( ".footer-center-2").toggleClass('justify-center justify-start').removeClass('pl-4').addClass('lg:pl-12');
-                $(".comp1-div").addClass('pl-3');
-                $(".comp2-div").addClass('pl-3');
-                $(".comp3-div").addClass('pl-3');
-                $(".comp4-div").addClass('pl-3');
-                $(".copyright-main-div").toggleClass('lg:justify-around lg:justify-start');
-                $(".copyright-div").removeClass('pl-4').toggleClass('ml-2 ml-4');
-                $(".socialmedia-div").addClass('offset-lg-6 lg:pl-4');
-                $( ".section1").addClass('ml-2');
-            } else if($(window).width() == 768) {
-                $(".main-right-div").toggleClass('offset-md-2 offset-md-0');
-                $(".copyright-main-div").toggleClass('md:justify-center md:justify-start');
-                $(".copyright-div").addClass('md:pl-10');
-                $(".socialmedia-div").addClass('offset-md-3 md:pl-11');
-                $(".login-btn").toggleClass('md:ml-0 md:ml-2');
-                $(".section1").addClass('pl-4 ml-3');
-                $(".comp1-div").parent().addClass('pl-4');
-                $(".copyright-main-div").toggleClass("md:justify-center md:justify-start");
-                $(".copyright-div").toggleClass('md:pl-10 md:pl-8');
-                $( ".footer-center-2").removeClass('pl-4').addClass('md:pl-10');
-                $(".comp-address").toggleClass("col-md-6 col-md-12");
-                $(".comp2-div").addClass("md:pl-40");
-                $(".comp4-div").addClass("md:pl-40");
-            } else if ($(window).width() == 360) {
-                $(".copyright-main-div").toggleClass('h-16 h-24');
-                $(".copyright-div").toggleClass('col-7 col-12');
-                $(".copyright-div").toggleClass('pt-2 pt-0');
-                $(".copyright-div").addClass('text-center');
-                $(".socialmedia-div").toggleClass('col-2 col-12');
-                $(".socialmedia-div").addClass('justify-center pt-2');
-                $(".inner-left-div").removeClass('pl-4 ml-1');
-                $(".footer-center-2").addClass('pl-0');
-                $(".comp-address").addClass('col-12 pl-10');
-                $(".comp1-div").addClass('col-6 pl-10');
-                $(".comp2-div").addClass('col-6 pl-10');
-                $(".comp3-div").addClass('col-6 pl-10');
-                $(".comp4-div").addClass('col-6 pl-10');
-                $(".segment3 ").addClass('pl-0');
-                $(".copyright-div").addClass('hidden');
-                $(".copyright-div-hidden").toggleClass('hidden visible col-7 col-12');
-                $(".copyright-main-div").toggleClass('h-16 h-28');
-                $(".copyright-div-hidden").addClass('pl-16 py-3');
-                $(".socialmedia-div").addClass('pt-3');
-            } else if ($(window).width() == 1600) {
-                $(".main-right-div").removeClass('offset-lg-3').addClass('offset-lg-4');
-                $(".copyright-main-div").toggleClass('lg:justify-around lg:justify-start');
-                $(".copyright-div").toggleClass('col-lg-3 col-lg-6').toggleClass('lg:text-right lg:text-left').addClass('lg:pl-16');
-                $(".socialmedia-div").addClass('offset-3 lg:pl-20 ');
-                $(".comp1-div").addClass('lg:pl-3');
-                $(".comp2-div").addClass('lg:pl-3');
-                $(".comp3-div").addClass('lg:pl-3');
-                $(".comp4-div").addClass('lg:pl-3');
-                $(".flags").toggleClass('justify-center justify-start').addClass('lg:pl-14 lg:gap-10');
-                $(".segment5").addClass('lg:pl-16');
-                $(".segment1").addClass('absolute lg:pl-6');
-                $(".segment2").addClass('absolute lg:pl-6');
-            } else if ($(window).width() == 800) { // Samsung Galaxy Tab 10 (samsung pad)
-                $(".main-right-div").toggleClass('offset-md-2 offset-md-0');
-                $(".section1").addClass('pl-4 ml-3');
-                $(".comp1-div").parent().addClass('pl-4');
-                $(".copyright-main-div").toggleClass("md:justify-center md:justify-start");
-                $(".copyright-div").addClass("md:pl-9");
-                $(".socialmedia-div").addClass("offset-md-3 md:pl-14");
-                $(".comp-address").toggleClass('col-md-6 col-md-12');
-                $(".comp1-div").toggleClass('col-md-6 col-md-8');
-                $(".comp3-div").toggleClass('col-md-6 col-md-8');
-                $(".comp2-div").toggleClass('col-md-6 col-md-4').addClass('md:pl-12');
-                $(".comp4-div").toggleClass('col-md-6 col-md-4').addClass('md:pl-12');
-                $( ".footer-center-2").removeClass('pl-4').addClass('md:pl-10');
-            } else if ($(window).width() == 1280) { // MS Surface
-                $(".footer-center-2").addClass('lg:pl-10').toggleClass('justify-center justify-start');
-                $(".copyright-main-div").toggleClass('lg:justify-around lg:justify-start');
-                $(".segment1").addClass('absolute lg:pl-4');
-                $(".segment2").addClass('absolute lg:pl-4');
-                $(".segment5").addClass('lg:pl-4');
-                $(".copyright-div").addClass('text-left lg:pl-14');
-                $(".socialmedia-div").addClass('offset-lg-6 lg:pl-24');
-                $(".comp1-div").addClass('lg:pl-16');
-                $(".comp2-div").addClass('lg:pl-16');
-                $(".comp3-div").addClass('lg:pl-16');
-                $(".comp4-div").addClass('lg:pl-16');
-            }
-        });
-    </script>
-@endsection
+        @include('layouts.partials.footer2')
+
+    @endsection

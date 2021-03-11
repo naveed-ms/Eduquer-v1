@@ -83,7 +83,7 @@
     }
 </style>
 
-@include('layouts.partials.dashboard_header')
+{{-- @include('layouts.partials.dashboard_header') --}}
 
 @section('content')
 
@@ -98,14 +98,14 @@
 
         <div class="col-8 col-md-10 col-lg-10 col-sm-8 px-0">
             <div class="h-full rounded-xl container" style="background-color: rgb(247, 247, 247);">
-                
+
                 <div class="row">
 
                     <!-- English Exam Type col -->
                     <div class="col-12 col-sm-12 col-md-4 col-lg-5 pt-3 ml-sm-1 pl-lg-4 overflow-auto">
                         <div class="">
                             <div class="w-36 h-auto rounded border-b-4 text-normal py-2" style="border-color: #35ccee;">English Exam Type</div>
-                            {{ Form::open(array('url' => 'home/educational-qualification', 'method' => 'post')) }} 
+                            {{ Form::open(array('url' => 'home/educational-qualification', 'method' => 'post')) }}
                             @csrf
                                 <div class="bg-white rounded-xl flex flex-col px-4 pt-3 mt-2 space-y-3 overflow-auto">
                                     <!-- IELTS -->
@@ -120,7 +120,7 @@
                                         <input type="text" placeholder="Speaking" name="ielts_speaking" value="{{ !empty($exam_data) ? $exam_data['ielts_speaking'] : '' }}"  class="form-control ielts_speaking">
                                     </div>
                                     <!-- IELTS ends -->
-                
+
                                     <!-- GMAT -->
                                     <div class="flex flex-row gap-1 pt-3">
                                         <input class="checkbox gmat_cbox mt-1" name="gmat_cbox" type="checkbox" value="">
@@ -137,7 +137,7 @@
                                         <input type="text" placeholder="Total Rank" name="gmat_total_rank" value="{{ !empty($exam_data) ? $exam_data['gmat_total_rank'] : '' }}"  class="form-control gmat_total_rank">
                                     </div>
                                     <!-- GMAT ends -->
-                
+
                                     <!-- TOEFL -->
                                     <div class="flex flex-row gap-1 pt-3">
                                         <input class="checkbox toefl_cbox mt-1" name="toefl_cbox" type="checkbox" value="">

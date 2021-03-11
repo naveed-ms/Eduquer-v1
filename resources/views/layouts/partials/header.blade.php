@@ -1,7 +1,10 @@
 <style>
-    html{
-        font-size:62.2%;
+
+   /* =============================================================== header-desktop========================================================================== */
+    html {
+        font-size: 62.2%;
     }
+
     * {
         box-sizing: border-box;
     }
@@ -19,14 +22,14 @@
         align-items: center;
         background: #effaff;
         color: #1d3270;
-        /* padding-left:15.1rem !important; */
-        /* padding-right: 15.1rem !important; */
+        padding-top: 7vh !important;
+
     }
 
     .logo {
         font-size: 0px;
-        padding-top: 5rem;
-        margin: 11px;
+        /* padding-top: 5rem; */
+        /* margin: 11px; */
         margin-left: 2vw !important;
     }
 
@@ -38,13 +41,9 @@
     }
 
     .navbar-links ul {
-        /* margin: 0px 10px; */
-        /* padding: 0px; */
         display: flex;
-        /* padding-top: 6rem; */
         font-size: 2rem;
         margin-right: 4rem;
-
     }
 
     .navbar-links ul li {
@@ -54,26 +53,27 @@
     .navbar-links ul li a {
         text-decoration: none;
         color: #35ccee;
-        padding:5px 25px 5px 25px;
+        padding: 5px 25px 5px 25px;
         display: block;
         font-size: 2rem;
     }
 
     .navbar-links ul li a:hover {
-        background:transparent;
+        background: transparent;
         color: #000000;
     }
 
     .togglebtn {
-        position: absolute;
-        /* background: aquamarine !important; */
-        top: 78px;
-        right: 78vw;
-        display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 2.2rem;
-        height: 23px;
+        margin-top: 2vh;
+    padding-left: -20px;
+    position: absolute;
+    /* top: 76px; */
+    right: 69vw;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3.2rem;
+    height: 23px;
     }
 
     .line {
@@ -82,29 +82,43 @@
         background: #1d3270;
         border-radius: 13px;
     }
-.login-btn1{
-    font-size: 2rem;
-            display: block !important;
-            width: 7rem;
-            /* padding-right: 2vw; */
-            /* padding-left: 2vw; */
-            /* justify-content: center; */
-            /* top: 14vh; */
-}
-.login-btn{
-    display: none !important;
-}
-    @media only screen and (max-width: 600px) {
+
+    .login-btn1 {
+        font-size: 2rem;
+        display: block !important;
+        width: 7rem;
+    }
+
+    .login-btn {
+        display: none !important;
+    }
+
+    .login-btn {
+        display: block;
+        margin-right: 11vh;
+    }
+       /* =============================================================== header-mobile========================================================================== */
+
+
+    @media only screen and (max-width: 600px) and (min-height:200px) {
+        .logo {
+        font-size: 0px;
+        /* padding-top: 11vh; */
+        /* margin: 11px; */
+        margin-left: 13vw !important;
+    }
         .login-btn {
             font-size: 1.2rem;
             display: block !important;
             width: 7rem;
             top: 14vh;
             display: block !important;
-            }
-            .login-btn1{
-                display: none !important;
-            }
+            margin:0 !important;
+        }
+
+        .login-btn1 {
+            display: none !important;
+        }
 
         .togglebtn {
             display: flex;
@@ -132,22 +146,16 @@
         .navbar-links ul li a {
             padding: 16px;
             font-size: 2rem;
-            /* background-color: white !important; */
             font-style: bold;
+            padding-left: 70px !important;
         }
 
         .navbar-links.active {
             display: flex;
         }
-
     }
+       /* =============================================================== header-mobile-end ========================================================================== */
 
-    .login-btn {
-        display: block;
-        margin-right: 11vh;
-
-
-    }
 
 </style>
 <header>
@@ -165,22 +173,15 @@
                 <div class=" login-btn1 rounded-pill text-color-white mb-2  " style="background-color:#1d3270;">
                     <a class="nav-link text-center text-white " href="{{ route('login') }}">Login</a>
                 </div>
-                {{-- <li><a href="{{ route('login') }}">Login</a> --}}
                 <li>
             </ul>
-
         </div>
-
         <div class=" login-btn rounded-full text-color-white mb-2  " style="background-color:#1d3270;">
             <a class="nav-link text-center text-white " href="{{ route('login') }}">Login</a>
         </div>
-
-
-
         <script>
             const toggleBtn = document.getElementsByClassName('togglebtn')[0]
             const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
             toggleBtn.addEventListener('click', () => {
                 navbarLinks.classList.toggle('active')
             })

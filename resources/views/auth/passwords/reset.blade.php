@@ -276,6 +276,6 @@
         </div>
         {{-- </div> --}}
         {{-- </div> --}}
-        @include('layouts.partials.footer1')
+        {{-- @include('layouts.partials.footer1') --}}
     @endsection
     {{-- @include('layouts.partials.footer1') --}}
