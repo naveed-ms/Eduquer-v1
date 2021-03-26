@@ -1,0 +1,204 @@
+/* ===================================================footer-desktop-start================================================================================================ */
+
+.footer-desktop {
+    background: rgb(32,64,123);
+    display: block !important ;
+}
+
+.footer-mobile {
+    display: none !important;
+
+}
+
+.desktop-section1 {
+    padding-top: 10vh;
+    padding-down: 20vh;
+    font-size: 3vw;
+    padding-left: 6vw;
+    font-family: 'Segoe UI' !important;
+}
+
+.desktop-started-button1 {
+    width: 17.1vw;
+    font-size: 2.2vw;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    margin-left: 10vw;
+    margin-bottom: 3.2rem;
+    border-radius: 18px;
+}
+
+
+.segment5 {
+    display: block;
+    padding-bottom: 17vh !important;
+    font-size: 1.5vw !important;
+    padding-top: 11vh !important;
+    padding-left: 6vw !important;
+    /* padding-right: 4rem !important; */
+
+
+}
+
+.desktop-segment6 {
+    padding-bottom: 17vh;
+    font-size: 1.5vw !important;
+    padding-top: 11vh;
+    padding-left: 13vw !important;
+}
+
+.mobile-copyright {
+    display: none !important;
+}
+
+.copy-right-one {
+    margin-top: 2rem;
+padding-left: 6vw;
+font-size: 1.4vw;
+margin-bottom: 2rem;
+}
+
+.copy-right-two {
+    margin-right: 2vw !important;
+
+        margin-top: 2rem !important;
+
+margin-bottom: 2rem !important;
+}
+
+.container1 {
+    width: 100%;
+    background: rgb(31, 61, 121) !important;
+    background: linear-gradient(0deg, rgba(31, 61, 121, 1) 0%, rgba(46, 160, 202, 1) 92%, rgba(46, 160, 202, 1) 100%, rgba(46, 160, 202, 1) 100%) !important;
+}
+
+.desktop-copyright {
+    /* background: gold !important; */
+    display: block !important;
+}
+.mobile-copyright1 {
+display: none;
+}
+
+/*=========================================================== footer-desktop-end========================================================
+        /* ===================================================footer-Mobile start ================================================== */
+
+@media only screen and (max-width:600px) {
+
+.copy-right-two {
+display: none !important;
+}
+
+.segment3{
+margin-bottom: 9vh !important;
+/* margin-left: 32vw !important; */
+/* margin: 0px auto 0px; */
+}
+
+.mobile-copyright1 {
+display: block;
+font-size: 0.8rem;
+font-family: 'Segoe UI'!important;
+color: white;
+
+padding-top: 2.4rem;
+text-align: center;
+padding-bottom: 4vh;
+justify-content: center;
+}
+
+.section1 {
+margin-bottom: 2rem !important;
+justify-content: center !important;
+text-align: center;
+padding-top: 4rem;
+font-size: 2rem !important;
+font-family: Segoe UI !important;
+       }
+
+.started-button1 {
+width: 12.1rem;
+font-size: 1.2rem;
+padding-top: 1.1rem;
+padding-bottom: 1.1rem;
+border-radius: 18px;
+margin: 0 auto !important;
+display: block;
+}
+
+.segment5 {
+display: none;
+}
+
+.desktop-segment6 {
+display: none;
+}
+
+.footer-mobile {
+/* background: red; */
+display: block !important;
+
+}
+
+.footer-desktop {
+display: none !important;
+}
+
+.Mississauga {
+font-size: 1.7rem;
+font-family: 'Segoe UI' !important;
+color: white;
+padding-left: 7vw;
+padding-right: 6vw;
+padding-top: 2.4rem;
+text-align: center
+}
+
+.phone {
+font-size: 1.7rem;
+font-family: 'Segoe UI'!important;
+color: white;
+padding-left: 7vw;
+padding-right: 6vw;
+padding-top: 2.4rem;
+text-align: center
+}
+
+.print {
+font-size: 1.7rem;
+font-family: 'Segoe UI'!important;
+color: white;
+padding-left: 7vw;
+padding-right: 6vw;
+padding-top: 2.4rem;
+text-align: center
+}
+
+.email3 {
+font-size: 1.7rem;
+font-family: 'Segoe UI'!important;
+color: white;
+padding-left: 7vw;
+padding-right: 6vw;
+padding-top: 2.4rem;
+text-align: center
+}
+
+.social-media {
+font-size: 1.7rem;
+font-family: 'Segoe UI',!important;
+color: white;
+
+padding-top: 3vh;
+text-align: center;
+padding-bottom: 3vh;
+}
+.mobile-copyright {
+display: block !important;
+}
+
+.desktop-copyright {
+display: none !important;
+}
+}
+/* ================================================footer-mobile-end====================================================================== */

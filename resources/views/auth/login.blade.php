@@ -1,18 +1,12 @@
 @extends('layouts.app')
-
-@section('scripts')
-    <script>
-        $('#form-id').find('input').val('');
-
-    </script>
-@endsection
-
-{{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet"> --}}
-
 <style>
     /* =============================================================Login-Page-desktop-start=============================================================== */
-
-    .font1{
+.
+   .btn-forget-pswd{
+margin-left: 4vw;
+    }    .forget-text{
+    /* padding-left: 23vw !important; */
+}    .font1{
         font-size:14px;
 
     }.complete-col {
@@ -20,8 +14,8 @@
     }
 
     .login-btn2 {
-        border-radius: 18px;
-        font-size: 14px;
+        /* border-radius: 18px; */
+        font-size: 20px;
     }
 
     .sec1 {
@@ -91,23 +85,30 @@
 
 
     input {
+        font-size: 25px !important;
         display: inline-block;
         border: thin solid #57d4f1;
         border-bottom: solid medium #999;
         color: #444;
         background-color: #white;
-        padding: 10px 10px 10px 10px;
+
+        /* padding: 10px 10px 10px 10px; */
+
+
     }
 
     input:focus {
-        border: thin solid white;
-        background-color: white;
+        border: thin solid #white;
+        /* border-bottom: solid medium #32cd32; */
+        background-color: #white;
+
     }
 
     label {
         color: #999;
         position: absolute;
         pointer-events: none;
+        /* left: 10px; */
         top: 10px;
         padding-left: 10px;
         transition: 0.4s;
@@ -117,12 +118,13 @@
     input:valid~label {
         top: -20px;
         left: 15px;
-        font-size: smaller;
+        font-size: large;
         color: #57d4f1;
         background-color: f9fdff;
-        padding: 2px 5px 2px 5px;
-    }
+        /* padding: 2px 5px 2px 5px; */
+        /* font-size: 25px !important; */
 
+    }
     button {
 
         font-size: 20px;
@@ -138,190 +140,21 @@
         background-color: 57d4f1;
         offset-position: initial;
     }
-
-    /* =============================================================== header-desktop========================================================================== */
-    html {
-        font-size: 62.2%;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        font-size: 17px;
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #effaff;
-        color: #1d3270;
-
-    }
-
-    .logo {
-        font-size: 0px;
-        padding-top: 5rem;
-        margin: 11px;
-        margin-left: 2vw !important;
-    }
-
-    .logo a {
-        text-decoration: none;
-        color: #35ccee;
-        margin-left: 20px;
-
-    }
-
-    .navbar-links ul {
-        display: flex;
-        font-size: 2rem;
-        margin-right: 4rem;
-    }
-
-    .navbar-links ul li {
-        list-style: none;
-    }
-
-    .navbar-links ul li a {
-        text-decoration: none;
-        color: #35ccee;
-        padding: 5px 25px 5px 25px;
-        display: block;
-        font-size: 2rem;
-    }
-
-    .navbar-links ul li a:hover {
-        background: transparent;
-        color: #000000;
-    }
-
-    .togglebtn {
-        position: absolute;
-        top: 78px;
-        right: 78vw;
-        display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 2.2rem;
-        height: 23px;
-    }
-
-    .line {
-        height: 3px;
-        width: 100%;
-        background: #1d3270;
-        border-radius: 13px;
-    }
-
-    .login-btn1 {
-        font-size: 2rem;
-        display: block !important;
-        width: 7rem;
-    }
-
-    .login-btn {
+    .login-btn{
         display: none !important;
     }
 
-    .login-btn {
-        display: block;
-        margin-right: 11vh;
-    }
+       @media only screen and (max-width: 600px) {
+        .navbar-brand{
 
+        }
+        .logo {
+            font-size: 0px;
+            padding-left: 32vw;
+                    }
 
-    /* ===================================================footer-desktop================================================================================================ */
-
-    .footer-desktop {
-        display: block !important;
-    }
-
-    .footer-mobile {
-        display: none !important;
-
-    }
-
-    .desktop-section1 {
-        padding-top: 10vh;
-        padding-down: 20vh;
-        font-size: 3vw;
-        padding-left: 8vw;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .desktop-started-button1 {
-        width: 17.1vw;
-        font-size: 2.2vw;
-        padding-top: 1.1rem;
-        padding-bottom: 1.1rem;
-        margin-left: 10vw;
-        margin-bottom: 3.2rem;
-        border-radius: 18px;
-    }
-
-
-    .segment5 {
-        display: block;
-        padding-bottom: 17vh !important;
-        font-size: 1.5vw !important;
-        padding-top: 11vh !important;
-        padding-left: 8vw !important;
-
-    }
-
-    .desktop-segment6 {
-        padding-bottom: 17vh;
-        font-size: 1.5vw !important;
-        padding-top: 11vh;
-        padding-left: 3vw;
-    }
-
-    .mobile-copyright {
-        display: none !important;
-
-    }
-
-    .copy-right-one {
-        display: block;
-        padding-left: 9vw;
-        font-size: 1.4vw;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .copy-right-two {
-        padding-left: 46vw !important;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-
-    .container1 {
-        width: 100%;
-        background: rgb(31, 61, 121) !important;
-        background: linear-gradient(0deg, rgba(31, 61, 121, 1) 0%, rgba(46, 160, 202, 1) 92%, rgba(46, 160, 202, 1) 100%, rgba(46, 160, 202, 1) 100%) !important;
-    }
-
-    .desktop-copyright {
-        display: block !important;
-    }
-
-
-    /*=========================================================== footer-desktop-end========================================================
-       /* =============================================================== header-mobile========================================================================== */
-
-
-    @media only screen and (max-width: 600px) {
         .login-btn {
-            font-size: 1.2rem;
-            display: block !important;
-            width: 7rem;
-            top: 14vh;
-            display: block !important;
+            display: none !important;
         }
 
         .login-btn1 {
@@ -346,152 +179,22 @@
             width: 100%;
             flex-direction: column;
         }
-
         .navbar-links ul li {
             text-align: center;
         }
-
         .navbar-links ul li a {
             padding: 16px;
             font-size: 2rem;
             font-style: bold;
+            padding-left: 70px !important;
         }
-
         .navbar-links.active {
             display: flex;
         }
     }
-
-    /* =============================================================== header-mobile-end ========================================================================== */
-
-
-    /* ===================================================footer-Mobile start ================================================== */
-
-    @media only screen and (max-width:600px) {
-
-        .copy-right-two {
-            display: none !important;
-        }
-
-        .segment3 {
-            justify-content: center !important;
-        }
-
-        .mobile-copyright1 {
-            font-size: 0.8rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-
-            padding-top: 2.4rem;
-            text-align: center;
-            padding-bottom: 10vh;
-            justify-content: center;
-        }
-
-        .section1 {
-            margin-bottom: 2rem !important;
-            justify-content: center !important;
-            text-align: center;
-            padding-top: 4rem;
-            font-size: 2rem !important;
-            font-family: Segoe UI;
-                   }
-
-        .started-button1 {
-            width: 12.1rem;
-            font-size: 1.2rem;
-            padding-top: 1.1rem;
-            padding-bottom: 1.1rem;
-            border-radius: 18px;
-            margin: 0 auto !important;
-            display: block;
-        }
-
-        .segment5 {
-            display: none;
-        }
-
-        .desktop-segment6 {
-            display: none;
-        }
-
-        .footer-mobile {
-            display: block !important;
-
-        }
-
-        .footer-desktop {
-            display: none !important;
-        }
-
-        .Mississauga {
-            font-size: 1.7rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-            padding-left: 7vw;
-            padding-right: 6vw;
-            padding-top: 2.4rem;
-            text-align: center
-        }
-
-        .phone {
-            font-size: 1.7rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-            padding-left: 7vw;
-            padding-right: 6vw;
-            padding-top: 2.4rem;
-            text-align: center
-        }
-
-        .print {
-            font-size: 1.7rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-            padding-left: 7vw;
-            padding-right: 6vw;
-            padding-top: 2.4rem;
-            text-align: center
-        }
-
-        .email3 {
-            font-size: 1.7rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-            padding-left: 7vw;
-            padding-right: 6vw;
-            padding-top: 2.4rem;
-            text-align: center
-        }
-
-        .social-media {
-            font-size: 1.7rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-
-            padding-top: 2.4rem;
-            text-align: center;
-            padding-bottom: 10vh;
-        }
-        .mobile-copyright {
-        display: block !important;
-    }
-
-    .desktop-copyright {
-        display: none !important;
-    }
-    }
-
-
-
-
-    /* =================================================footer-Mobile end ================================================== */
-
-
 </style>
-
+@include('layouts.partials.header')
 @section('content')
-    @include('layouts.partials.header')
     <div class="container-fluid complete-col pt-12  pt-sm-0">
         <div class="row theme-bg-2 ">
             <div class="col-lg-6 col-md-12 lg:pt-16 lg:pb-12 md:pb-12 md:pt-12 mb-5">
@@ -508,7 +211,7 @@
 
                 <form method="POST" action="{{ route('login') }} " class="offset-lg-1 offset-md-2">
                     @csrf
-                    <div class="col-md-8 col-sm-4 mt-4 mb-4">
+                    <div class="col-md-8 col-sm-4 mt-5 mb-5 ">
                         <input id="email" type="email" placeholder=""
                             class="form-control h-14 @error('email') is-invalid @enderror" name="email"
                             value="{{ isset($data) ? $data['email'] : old('email') }}" required autofocus>
@@ -519,7 +222,7 @@
                             </span>
                         @enderror
                     </div>
-                    <div class="col-md-8 mt-4 col-sm-4">
+                    <div class="col-md-8 mt-4 col-sm-4 mt-5 mb-3">
                         <input id="password" placeholder="" type="password"
                             class="form-control @error('password') is-invalid @enderror h-14" name="password" value="" required>
                         <label for="password" class="font1">{{ __('Password') }}</label>
@@ -530,21 +233,24 @@
                         @enderror
                     </div>
                     <button type="submit"
-                        class="col-lg-7 col-11 col-md-7  mt-4 ml-3 mb-1 pl-5 pr-5 login-btn2 text-white h-10"
+                        class="col-lg-7 col-11 col-md-7  mt-4 ml-3 mb-1 pl-5 pr-5 login-btn2  rounded-pill text-white h-20"
                         style="background-color: #1d327d;">
                         <span>Login</span>
                     </button>
-                    <div>
-                        @if (Route::has('password.request'))
-                            <a class="btn btn-link offset-lg-5 offset-md-5 offset-lg-2" style="color:57d4f1;Segoe UI"
+                    @if (Route::has('password.request'))
+                    <div class="col-md-12  col-lg-12 mt-4 col-sm-12 mt-5 mb-3 float-right ">
+                        <a class="btn btn-link  " style="color:57d4f1;Segoe UI;font-size:1.5rem"
                                 href="{{ route('password.request') }}">
                                 {{ __('Forgot Your Password?') }}
                             </a>
                         @endif
                     </div>
+
+                    <div>
                 </form>
             </div>
         </div>
+    </div>
         @include('layouts.partials.footer2')
 
     @endsection

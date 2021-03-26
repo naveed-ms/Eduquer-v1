@@ -1,6 +1,27 @@
 @extends('layouts.app')
+<style>
+    .mobile-view{
+        display: none;
+    }
+    .desktop-view{
+display: block
+    }
+    @media only  and (max-width:600px){
+        .mobile-view{
+        display: block;
+    }
+    .desktop-view{
+display: none;
+    }
+    }
+</style>
+<div class="desktop-view">
+    {{-- @include('layouts.partials.dashboard_header') --}}
+</div>
+<div class="mobile-view">
+    {{-- @include('layouts.partials.dashboard_header0') --}}
+</div>
 
-@include('layouts.partials.dashboard_header')
 
 @section('content')
 <div class="container-fluid">
@@ -23,7 +44,7 @@
                     </div>
 
                 </div>
-                
+
             </div>
         </div>
     </div>

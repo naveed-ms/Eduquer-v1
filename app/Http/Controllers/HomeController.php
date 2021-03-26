@@ -10,6 +10,7 @@ use App\work_experience;
 use App\program;
 use App\program_data;
 use App\canadian_city;
+use App\user;
 use Validator;
 // use App\Http\Controllers\MailController as MailController;
 use App\Mail\SendMail;
@@ -55,7 +56,9 @@ class HomeController extends Controller
                 $basic_info_data['study_visa'] = $b_info->study_visa;
             }
         }
-        return view('home')->with('countries', $this->countries)->with('student', $basic_info_data);
+        // return view('home')->with('countries', $this->countries)->with('student', $basic_info_data);
+        $user_data = json_decode(user::where('id', auth()->user()->id)->get()[0]);
+        return view('home')->with('countries', $this->countries)->with('student', $basic_info_data)->with('user_data', $user_data);
     }
 
     public function english_exam(Request $request)
@@ -108,7 +111,8 @@ class HomeController extends Controller
             ];
             basic_info::updateOrCreate(['user_id' => $user_id], $data);
         }
-        return view('english_exam')->with('exam_data', $english_exam_data);
+        $user_data = json_decode(user::where('id', auth()->user()->id)->get()[0]);
+        return view('english_exam')->with('exam_data', $english_exam_data)->with('user_data', $user_data);
     }
 
     public function educational_qualification(Request $request)
@@ -147,7 +151,8 @@ class HomeController extends Controller
         $edu_qual_data_json = educational_qualification::where('user_id', $user_id)->orderByDesc('created_at')->get();
         $edu_qual_data = json_decode($edu_qual_data_json);
         // return view('educational_qualification')->with('edu_qual_data', $edu_qual_data);
-        return view('e_qual')->with('edu_qual_data', $edu_qual_data);
+        $user_data = json_decode(user::where('id', auth()->user()->id)->get()[0]);
+        return view('e_qual')->with('edu_qual_data', $edu_qual_data)->with('user_data', $user_data);
     }
 
     public function work_experience(Request $request)
@@ -181,10 +186,10 @@ class HomeController extends Controller
         } else {
             $tmp_work_exp_json = work_experience::where('user_id', $user_id)->orderByDesc('created_at')->get();
             $work_exp_data = json_decode($tmp_work_exp_json);
-            return view('work_experience')->with('work_exp_data', $work_exp_data);
-        }
+            $user_data = json_decode(user::where('id', auth()->user()->id)->get()[0]);
+            return view('work_experience')->with('work_exp_data', $work_exp_data)->with('user_data', $user_data);
     }
-
+    }
     public function program(Request $request)
     {
         $user_id = auth()->user()->id;
@@ -232,7 +237,8 @@ class HomeController extends Controller
             ]);
             return back();
         } else {
-            return view('program', compact(/*'canadian_cities',*/'program_names', 'program_user_data'));
+            $user_data = json_decode(user::where('id', auth()->user()->id)->get()[0]);
+            return view('program', compact(/*'canadian_cities',*/'program_names', 'program_user_data'))->with('user_data', $user_data);
         }
     }
 

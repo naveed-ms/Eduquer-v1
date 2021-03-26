@@ -21,11 +21,7 @@ display: none !important;
     font-size: 1.2rem;
     padding-top: 2rem;
     padding-bottom:1.1rem;
-    /* margin-left: 36vw; */
-    /* margin-top: 3rem; */
-    /* margin-bottom: 3.2rem; */
     border-radius: 18px;
-    /* justify-content: center; */
     margin: 0 auto !important;
     display: block !important;
     padding-top: 1.1rem !important;
@@ -39,8 +35,8 @@ display: none !important;
 
      /* ================================footer desktop view start=========================================== */
 
-     /* .footer-desktop {
-        display: block !important;
+     .footer-desktop {
+        display: block !important ;
     }
 
     .footer-mobile {
@@ -52,7 +48,7 @@ display: none !important;
         padding-top: 10vh;
         padding-down: 20vh;
         font-size: 3vw;
-        padding-left: 8vw;
+        padding-left: 6vw;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
@@ -68,11 +64,13 @@ display: none !important;
 
 
     .segment5 {
-        display: block;
+        display: block !important;
         padding-bottom: 17vh !important;
         font-size: 1.5vw !important;
         padding-top: 11vh !important;
-        padding-left: 8vw !important;
+        padding-left: 6vw !important;
+        /* padding-right: 4rem !important; */
+
 
     }
 
@@ -80,7 +78,7 @@ display: none !important;
         padding-bottom: 17vh;
         font-size: 1.5vw !important;
         padding-top: 11vh;
-        padding-left: 3vw;
+        padding-left: 13vw !important;
     }
 
     .mobile-copyright {
@@ -89,22 +87,29 @@ display: none !important;
     }
 
     .copy-right-one {
-        display: block;
-        padding-left: 9vw;
-        font-size: 1.4vw;
+        margin-top: 2rem;
+    padding-left: 6vw;
+    font-size: 1.4vw;
+    margin-bottom: 2rem;
     }
 
     .copy-right-two {
-        padding-left: 46vw !important;
-        padding-top: 2vh !important;
+        margin-right: 2vw !important;
+
+            margin-top: 2rem !important;
+
+    margin-bottom: 2rem !important;
     }
 
-
+    .container1 {
+        width: 100%;
+        background: rgb(31, 61, 121) !important;
+        background: linear-gradient(0deg, rgba(31, 61, 121, 1) 0%, rgba(46, 160, 202, 1) 92%, rgba(46, 160, 202, 1) 100%, rgba(46, 160, 202, 1) 100%) !important;
+    }
 
     .desktop-copyright {
         display: block !important;
-    } */
-
+    }
 
 
           /* ================================footer desktop view end=========================================== */
@@ -115,41 +120,18 @@ display: none !important;
     .font1 {
         font-size: 14px;
     }
-
     .girlClass {
-        /* padding-bottom:10px; */
-        /* margin-bottom: 500px; */
-        /* border: 1px solid black; */
-        /* width:40vw !important;
-        height: 80vh !important; */
         padding-left: 5vw;
         padding-right: 5vw;
-        /* width: 70vw;
-        height: 40vh; */
-        /* padding-bottom: 30vh; */
-        /* width: 20vh; */
-
     }
 
-    /* image {
-        width: 300px;
-        height: 200px;
-        justify-content: center;
-
-    } */
-    /* #_Rectangke_{
-        width: 40vw !important;
-        height: 40vh !important;
-    } */
     /* ======================================button======================================== */
     button {
-        /* float: right; */
         padding: 4px, 18px;
         font-size: 20px;
         border: none;
         background-color: 1d3270;
         color: white;
-        /* color: white; */
         padding: 8px 8px;
     }
 
@@ -189,7 +171,7 @@ display: none !important;
     }
 
     /* ======================================button-End=========================================================== */
-
+/* =================================================label+input-start================================================================================== */
 
     input {
         font-size: 25px !important;
@@ -232,6 +214,10 @@ display: none !important;
         /* font-size: 25px !important; */
 
     }
+
+
+    /* =================================================label+input-end================================================================================== */
+
 body{
     background: rgb(212,242,255) ;
 background: linear-gradient(0deg, rgba(212,242,255,1) 0%, rgba(239,250,255,1) 19%) !important;
@@ -251,14 +237,14 @@ background: linear-gradient(0deg, rgba(212,242,255,1) 0%, rgba(239,250,255,1) 19
         margin-left: 10px;
         box-shadow: 0 0 15px rgba(214, 211, 211, 0.671);
         padding-left: 6vw;
-        padding-top: 30px;
+        /* padding-top: 30px; */
         /* padding-right: 50px; */
         border-bottom: none;
         align-items: center;
         padding-right: 20px;
         /* height: 100vh;; */
         padding-bottom: :20px;
-        margin-top:11vh;
+        /* margin-top:11vh; */
 
 
 
@@ -269,7 +255,7 @@ background: linear-gradient(0deg, rgba(212,242,255,1) 0%, rgba(239,250,255,1) 19
         /* padding-bottom: 140x; */
         font-weight: bolder;
         font-style: bolder;
-        font-size: 50px;
+        font-size: 35px;
         color: 1d3270;
         font-family: Segoe UI;
         margin-bottom: 12vh;
@@ -296,7 +282,7 @@ background: linear-gradient(0deg, rgba(212,242,255,1) 0%, rgba(239,250,255,1) 19
             <form method="POST" action="{{ route('register') }}">
                 @csrf
                 <div class="row">
-                    <div class="col-lg-3 mb-4 pr-4">
+                    <div class="col-lg-3 mb-4 pr-4 mt-4">
                         <input id="first_name" placeholder=" " type="text"
                             class="form-control @error('first_name') is-invalid @enderror h-14 rounded" name="first_name"
                             required value="{{ old('first_name') }}" autocomplete="name" autofocus>
@@ -308,7 +294,7 @@ background: linear-gradient(0deg, rgba(212,242,255,1) 0%, rgba(239,250,255,1) 19
                             </span>
                         @enderror
                     </div>
-                    <div class="col-lg-3 mb-4 pr-4">
+                    <div class="col-lg-3 mb-4 pr-4 mt-4">
                         <input id="middle_name" placeholder=" " type="text"
                             class="form-control @error('middle_name') is-invalid @enderror h-14 " name="middle_name"
                             required value="{{ old('middle_name') }}" autocomplete="name" autofocus>
@@ -319,7 +305,7 @@ background: linear-gradient(0deg, rgba(212,242,255,1) 0%, rgba(239,250,255,1) 19
                             </span>
                         @enderror
                     </div>
-                    <div class="col-lg-3 mb-4 pr-4">
+                    <div class="col-lg-3 mb-4 pr-4 mt-4">
                         <input id="last_name" placeholder="" type="text"
                             class="form-control @error('last_name') is-invalid @enderror h-14 " name="last_name" required
                             value="{{ old('last_name') }}" autocomplete="name" autofocus>
@@ -335,22 +321,22 @@ background: linear-gradient(0deg, rgba(212,242,255,1) 0%, rgba(239,250,255,1) 19
                 <div class="row">
                     <div class="col-lg-6 ">
                         <div class="row">
-                            <div class="col-lg-6 mb-4 pr-4">
+                            <div class="col-lg-6 mb-4 pr-4 mt-4">
                                 <input id="area" placeholder=" " type="text"
                                     class="form-control @error('area') is-invalid @enderror h-14 " name="area"
                                     value="{{ old('area') }}" autocomplete="name" required autofocus>
-                                <label class="font1"  for="area">{{ __('Area') }}</label>
+                                <label class="font1"  for="area">{{ __('Address Line 1') }}</label>
                                 @error('area')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
-                            <div class="col-lg-6 mb-4 pr-4">
+                            <div class="col-lg-6 mb-4 pr-4 mt-4">
                                 <input id="street" placeholder=" " type="text"
                                     class="form-control @error('street') is-invalid @enderror h-14 " name="street"
                                     value="{{ old('street') }}" required autocomplete="name" autofocus>
-                                <label class="font1"  for="street">{{ __('Street') }}</label>
+                                <label class="font1"  for="street">{{ __('Address Line 2') }}</label>
                                 @error('street')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -359,19 +345,19 @@ background: linear-gradient(0deg, rgba(212,242,255,1) 0%, rgba(239,250,255,1) 19
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 mb-4 pr-4">
+                            <div class="col-lg-6 mb-4 pr-4 mt-4">
                                 <input id="zip_code" placeholder=" " type="text"
                                     class="form-control @error('zip_code') is-invalid @enderror h-14 " name="zip_code"
                                     value="{{ old('zip_code') }}" required autocomplete="name" autofocus>
                                 <label  class="font1"
-                                    for="zip code">{{ __('Zip Code') }}</label>
+                                    for="zip code">{{ __('Zip Code / Postal Code') }}</label>
                                 @error('zip code')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
                             </div>
-                            <div class="col-lg-6 mb-4 pr-4">
+                            <div class="col-lg-6 mb-4 pr-4 mt-4">
                                 <input id="email" placeholder=" " type="email"
                                     class="form-control @error('email') is-invalid @enderror h-14 " name="email"
                                     value="{{ old('email') }}" required autocomplete="email">
@@ -385,7 +371,7 @@ background: linear-gradient(0deg, rgba(212,242,255,1) 0%, rgba(239,250,255,1) 19
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 mb-4 pr-4">
+                            <div class="col-lg-6 mb-4 pr-4 mt-4">
                                 <input id="cell_phone_number" placeholder=" " type="text"
                                     class="form-control @error('cell_phone_number') is-invalid @enderror h-14 "
                                     name="cell_phone_number" required value="{{ old('cell_phone_number') }}" autofocus>
@@ -397,7 +383,7 @@ background: linear-gradient(0deg, rgba(212,242,255,1) 0%, rgba(239,250,255,1) 19
                                     </span>
                                 @enderror
                             </div>
-                            <div class="col-lg-6 mb-4 pr-4">
+                            <div class="col-lg-6 mb-4 pr-4 mt-4">
                                 <input id="home_phone_number" placeholder=" " type="text"
                                     class="form-control @error('home_phone_number') is-invalid @enderror h-14 "
                                     name="home_phone_number" required value="{{ old('home_phone_number') }}" autofocus>
@@ -411,7 +397,7 @@ background: linear-gradient(0deg, rgba(212,242,255,1) 0%, rgba(239,250,255,1) 19
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 mb-4 pr-4">
+                            <div class="col-lg-6 mb-4 pr-4 mt-4">
                                 <input id="password" type="password"
                                     class="form-control @error('password') is-invalid @enderror h-14 " name="password"
                                     required autocomplete="new-password">
@@ -423,7 +409,7 @@ background: linear-gradient(0deg, rgba(212,242,255,1) 0%, rgba(239,250,255,1) 19
                                     </span>
                                 @enderror
                             </div>
-                            <div class="col-lg-6 mb-4 pr-4  ">
+                            <div class="col-lg-6 mb-4 pr-4 mt-4 ">
                                 <input id="password-confirm" type="password" class="form-control h-14"
                                     name="password_confirmation" required autocomplete="new-password">
                                 <label class="font1"
@@ -431,7 +417,7 @@ background: linear-gradient(0deg, rgba(212,242,255,1) 0%, rgba(239,250,255,1) 19
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 c0l-sm-12 mb-2 ">
+                            <div class="col-lg-6 col-md-6 c0l-sm-12 mb-2 mt-4 ">
                                 <div class="g-recaptcha" data-sitekey="{{ env('CAPTCHA_KEY') }}"></div>
                                 @if ($errors->has('g-recaptcha-response'))
                                     <span class="invalid-feedback" style="display:block">
@@ -439,9 +425,9 @@ background: linear-gradient(0deg, rgba(212,242,255,1) 0%, rgba(239,250,255,1) 19
                                     </span>
                                 @endif
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6  py-2 py-lg-0 pr-4">
-                                <button type="submit" class="rounded pl-5 pr-5 text-white h-10 float-right"
-                                    style="background-color: #1d327d;">
+                            <div class="col-lg-6 col-md-6 col-sm-6  py-2 py-lg-0 pr-4 mt-4">
+                                <button type="submit" class="rounded-pill login-btn2  ml-3 mb-1 pl-5 pr-5 login-btn2  rounded-pill text-white h-20 float-right"
+                                style="background-color: #1d327d;">
                                     <span class="text-2xl">Submit</span>
                                 </button>
                             </div>

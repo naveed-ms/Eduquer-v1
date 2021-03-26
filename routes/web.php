@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\helpers as helpers;
+use Illuminate\Support\Facades\Notification;
+use App\Notifications\NewMessage;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,19 +36,16 @@ Route::get('/faqs', function () {
     return view('faqs');
 
 });
+Route::get('/about-us', function () {
+    return view('about');
 
-Route::get('/footer', function () {
-    return view('footer');
 });
-Route::get('/countries', function () {
-    return view('countries');
-});
+
+
 Route::get('/welcome1', function () {
     return view('welcome1');
 });
-Route::get('/faqs', function () {
-    return view('faqs');
-});
+
 
 Auth::routes(['verify'=>true]);
 
@@ -93,3 +92,8 @@ Route::get('send-email/{email_type?}/{to?}','MailController@send_email'); // pla
 
 //this is the orange colour
 //second change
+
+Route::get('/test-mail', function (){
+    Notification::route('mail', 'support@eduquer.com')->notify(new NewMessage());
+    return 'Sent';
+});

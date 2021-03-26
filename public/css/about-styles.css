@@ -1,0 +1,24 @@
+.about-us1{
+    background: white;
+    margin: 0px auto 0px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 2rem;
+    font-family: 'Segoe UI';
+    color: #666666;
+}
+.about-us1 button{
+    background-color: #1d3270;
+    padding-left: 5.3rem;
+    padding-right: 5.3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 20px;
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 8.8rem;
+    margin-bottom: 8.8rem;
+    border: none;
+}

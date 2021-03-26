@@ -1,0 +1,19 @@
+<svg id="dashboard-step4-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="79" height="79" viewBox="0 0 79 79">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="79" height="79" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="3.162"/>
+      <feFlood result="flood" flood-color="#35ccee" flood-opacity="0.28"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="background_copy_3" data-name="background copy 3" class="cls-1" x="9" y="9" width="60" height="60" rx="18" ry="18"/>
+  <image id="_2525347-200" data-name="2525347-200" x="22" y="22" width="36" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAeCAYAAABE4bxTAAACFElEQVRYhe3WTYiNURgH8N+9c/MxJomymQxRSllaWQsbSohkp0RskIUVC9nKSjYsFBERi0kzmZXFbG18zoJQ5CONfM2XTj233qY7c99juu5d+NfpnN73PM/zP8855/mfytDQkAyswgX0YVETs3G8w2k8KhuilsMGW7E9xlNN5lawDo9zCFUzCX2Pfm/Yztb6Yu6PnAC5hOrb1F1ibiX6xa0k9AKvozVDyuYrjOQEyD1Dg1hZcu7HuARZqBNaj95CmmfCBL6hB10lAn3FAswvMfcLhhOhnbiVu5IW4VgidDB8H4i60S70p+TUYgsSrpSoLa3GZDUqasLqDtiy37nXvuWoFm7WeBt51FGpFs7N+/bzUakV9OkaTmZU1lSH1sR4atr3lxkZX4qzMX5TzNCOcHQOS0o42oJn0Z4X2hOcKUnmKD7hMH5hrFYQzG04gVPRDuHpLNV7d/SXMVpQ/SOxuMEZ7FICluEilqesYD/uYEV6oN0M5/XAe3C9hIwIKZmuhyMZJeQ4zheIPqwVtmxtpP0G7mNzaNZEA0c/sQ+7sCl0SCyiN14FKcvzGtimLI7Fo+3ttH+TxdUVA6eDfrfJ6rqD0ECDf8O43cS+IXKfH0UMxDnrKWS5Eoez/2+dzoXQB1yag31DdKR0dBT+E2qGjiRUf6x/bjOXhK5a1JGEDSGu7UBdphYmQvewEVdnkIl/hVE8+APQf2na+i767wAAAABJRU5ErkJggg=="/>
+</svg>

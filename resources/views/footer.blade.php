@@ -63,7 +63,7 @@
     </div>
     <div class="col-lg-6 col-md-6 col-sm-3">
      <div class="segment3" style="">
-         <button class="w-36 h-10 rounded bg-white theme-text-1 font-medium" href="#" style="color:#1d3270">Get Started&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+         <button class="w-36 h-10 rounded bg-white theme-text-1 font-medium" onclick="window.location='{{ route("login") }}'"  style="color:#1d3270">Get Started&nbsp;&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
      </div>
    </div>
  </div>
